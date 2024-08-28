@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -98,107 +97,91 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: url("/img/signUp/signUp-bg-mp.mp4");
-  background-size: cover;
-}
-
-.bgvideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -9999;
+  background-color: #080808;
+  position: relative;
 }
 
 .__container {
-  max-width: 1200px;
-  margin: auto;
   padding: 0px 15px 0px 15px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+.header__container {
+  position: absolute;
+  width: 100%;
+  padding: 25px 50px;
+}
+@media (max-width: 518px) {
+  .header__container {
+    padding: 10px 15px;
   }
 }
-.lang {
+.header_menu {
+  margin-left: 10px;
+  display: none;
+}
+.header__nav {
   display: flex;
-  justify-content: flex-end;
-  margin: 20px;
+  justify-content: space-between;
 }
-.lang-btn {
+.header__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__links {
+  color: #fff;
+  cursor: pointer;
+}
+.header__avatar {
   width: 40px;
   height: 40px;
-  border-radius: 5px;
-  background-color: rgba(253, 253, 253, 0.9058823529);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1921568627);
+  cursor: pointer;
+}
+.header__avatar:hover .header_userimg {
+  opacity: 1;
+}
+.header_userimg {
+  width: 25px;
+  height: 25px;
+  opacity: 0.6;
+}
+.header__links-active {
+  color: #080808;
+  background-color: white;
+  border-radius: 20px;
+  padding: 4px 14px;
+  margin: 0px 15px 0px 25px;
+}
+.header__part {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1921568627);
+}
+.header__part_img {
+  width: 20px;
+  opacity: 0.6;
+}
+.header__part_settings {
+  margin-left: 10px;
+}
+.header__part_settings:hover .header__part_img, .header__part_search:hover .header__part_img {
+  opacity: 1;
 }
 
-.login-container {
-  background: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон */
-  padding: 60px 40px;
-  border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Тень */
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px); /* Размытие фона */
-  width: 420px;
-  animation: fadeIn 1s ease-in-out;
-  color: #fff;
-  margin-bottom: 20px;
-  font-size: 24px;
+@media (max-width: 402px) {
+  .header_menu {
+    display: block;
+  }
 }
-.login-container_title {
-  text-align: center;
-  padding-bottom: 20px;
-}
-.login-container_btn {
-  width: 100%;
-  padding: 10px;
-  background-color: rgba(123, 191, 254, 0.7607843137); /* Цвет кнопки */
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin: 10px 0;
-}
-.login-container_btn:hover {
-  background-color: rgba(109, 182, 250, 0.8980392157); /* Цвет при наведении */
-}
-.login-container input[type=text], .login-container input[type=password] {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0px;
-  border: none;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.3);
-  color: #fff;
-  font-size: 16px;
-  outline: none;
-}
-.login-container input[type=text] input[type=text]::-moz-placeholder, .login-container input[type=text] input[type=password]::-moz-placeholder, .login-container input[type=password] input[type=text]::-moz-placeholder, .login-container input[type=password] input[type=password]::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-.login-container input[type=text] input[type=text]::placeholder, .login-container input[type=text] input[type=password]::placeholder, .login-container input[type=password] input[type=text]::placeholder, .login-container input[type=password] input[type=password]::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-.login-container label {
-  text-align: left;
-  font-size: 18px;
-}
-.login-container_link {
-  color: rgba(253, 253, 253, 0.7882352941);
-  font-size: 14px;
-}
-.login-container_link:hover {
-  text-decoration: underline;
-  color: #fff;
+@media (max-width: 402px) {
+  .header__links {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

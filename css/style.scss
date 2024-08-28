@@ -7,124 +7,116 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    // background: url(/img/signUp/signUp-bgcc.jpg);
-    // background-size: cover;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    background: url('/img/signUp/signUp-bg-mp.mp4');
-  background-size: cover;
+    background-color: #080808;
+    position: relative;
 }
-.bgvideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -9999;
-  }
 .__container {
-    
-    max-width: 1200px;
-    margin: auto;
-
     padding: 0px 15px 0px 15px;
 }
 
 // -----------------------------------------------
 
+.header {
+    &_avatar {
+    }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
+    &__container {
+        position: absolute;
+        width: 100%;
+        padding: 25px 50px;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    @media (max-width:518px) {
+        &__container {
+            padding: 10px 15px;
+        }
     }
-}
-.lang{
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px;
-    &-btn{
+    &_menu{
+        margin-left: 10px;
+        display: none;
+    }
+    
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__links {
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    &__avatar {
         width: 40px;
         height: 40px;
-        border-radius: 5px;
-        background-color: #fdfdfde7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #ffffff31;
+        cursor: pointer;
+        &:hover {
+            .header_userimg {
+                opacity: 1;
+            }
+        }
+    }
+    &_userimg {
+        width: 25px;
+        height: 25px;
+        opacity: 0.6;
+    }
+    &__links-active {
+        color: #080808;
+        background-color: white;
+        border-radius: 20px;
+        padding: 4px 14px;
+        margin: 0px 15px 0px 25px;
+    }
+
+    &__settings {
+    }
+
+    &__part {
+        background-color: transparent;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #ffffff31;
+
+        &_img {
+            width: 20px;
+            opacity: 0.6;
+        }
+        &_search {
+        }
+
+        &_settings {
+            margin-left: 10px;
+        }
+        &_settings,
+        &_search {
+            &:hover {
+                .header__part_img {
+                    opacity: 1;
+                }
+            }
+        }
         
     }
 }
-.signIn {
-    &__container {
+@media (max-width:402px) {
+    .header_menu {
+        display: block;
     }
 }
-.login-container {
-    background: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон */
-    padding: 60px 40px;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Тень */
-    backdrop-filter: blur(10px); /* Размытие фона */
-    width: 420px;
-    
-    animation: fadeIn 1s ease-in-out;
-    color: #fff;
-    margin-bottom: 20px;
-    font-size: 24px;
-    &_title {
-        text-align: center;
-        padding-bottom: 20px;
+@media (max-width:402px) {
+    .header__links {
+        display: none;
     }
-    &_btn {
-        width: 100%;
-        padding: 10px;
-        background-color: #7bbffec2; /* Цвет кнопки */
-        border: none;
-        border-radius: 5px;
-        color: white;
-        font-size: 18px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        margin: 10px 0;
-        &:hover {
-            background-color: #6db6fae5; /* Цвет при наведении */
-        }
-    }
-    & input[type="text"],
-    & input[type="password"] {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0px;
-        border: none;
-        border-radius: 5px;
-        background: rgba(255, 255, 255, 0.3);
-        color: #fff;
-        font-size: 16px;
-        outline: none;
-        & input[type="text"]::placeholder,
-        & input[type="password"]::placeholder {
-            color: rgba(255, 255, 255, 0.7);
-        }
-    }
-    & label{
-        text-align: left;
-        font-size: 18px;
-    }
-    &__links-wrap{
-
-    }
-    &_link{
-        color: #fdfdfdc9;
-        font-size: 14px;
-        &:hover{
-            text-decoration: underline;
-            color: #fff;
-        }
-    }
-    
 }
-
-
-

@@ -15,32 +15,46 @@
       href="https://fonts.googleapis.com/css?family=Revalia:regular"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/for-sign/sign-style.css">
   </head>
   <body>
     <div class="wrapper">
       <video autoplay loop muted class="bgvideo" id="bgvideo">
-        <source src="img/signUp/signUp-bg-mp.mp4" type="video/mp4"></source>
-       </video>
+        <source src="/img/signUp/signUp-bg-mp.mp4" type="video/mp4">
+      </video>
       <div class="container">
         <div class="raindrop"></div>
-    </div>
+      </div>
       <div class="lang">
         <button class="lang-btn">Ru</button>
       </div>
       <div class="signIn__container __container">
         <div class="signIn">
           <div class="signIn__login-container login-container">
-            <h2 class="login-container_title">Вход</h2>
+            <h2 class="login-container_title">Регистрация</h2>
             <form>
-              <input id="signUp-login" type="text" placeholder="Логин" required />
-              <input id="signUp-password" type="password" placeholder="Пароль" required />
-              <button class="login-container_btn" type="submit">Войти</button>
+              <label for="">Придумайте логин</label>
+              <input
+                id="signUp-login"
+                type="text"
+                placeholder="Логин"
+                required
+              />
+              <label for="">Придумайте пароль</label>
+              <input
+                id="signUp-password"
+                type="password"
+                placeholder="Пароль"
+                required
+              />
+              <button class="login-container_btn" type="submit">
+                Зарегестрироваться
+              </button>
             </form>
             <div class="login-container__links-wrap">
-              <a href="#" class="login-container_link">Забыли пароль?</a>
-              <a href="signUp.html" class="login-container_link">Нет аккаунта?</a>
+              <a href="signIn.html" class="login-container_link"
+                >Есть аккаунт?</a
+              >
             </div>
           </div>
         </div>
