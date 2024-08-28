@@ -273,6 +273,43 @@ body {
     font-size: 60px;
   }
 }
+.collection-better {
+  display: flex;
+  justify-content: center;
+}
+.collection-better__card {
+  width: 100%;
+  overflow: hidden;
+  height: 220px;
+  background-color: rgba(31, 31, 31, 0.8274509804);
+  border-radius: 20px;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 15px;
+  position: relative;
+  filter: brightness(60%);
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0.95;
+}
+.collection-better__card:hover {
+  transition: 0.5s;
+  transition: 1s;
+  filter: brightness(100%);
+  opacity: 1;
+}
+.collection-better_ibg {
+  position: absolute;
+  z-index: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
 .pageSection__container {
   position: relative;
   z-index: 100;
