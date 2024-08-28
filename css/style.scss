@@ -22,6 +22,7 @@ body {
 
     &__container {
         position: absolute;
+        z-index: 100;
         width: 100%;
         padding: 25px 50px;
     }
@@ -49,6 +50,11 @@ body {
     &__links {
         color: #fff;
         cursor: pointer;
+        transition: 0.5s;
+        &:hover{
+            transition: 0.5s;
+            opacity: 0.8;
+        }
     }
     
     &__avatar {
@@ -80,6 +86,7 @@ body {
     }
 
     &__settings {
+        display: flex;
     }
 
     &__part {
@@ -94,6 +101,7 @@ body {
             opacity: 0.6;
         }
         &_search {
+            margin-left: 20px;
         }
 
         &_settings {
@@ -119,4 +127,145 @@ body {
     .header__links {
         display: none;
     }
+}
+
+.bigBanner {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    margin-bottom: -120px;
+    &:hover{
+        .bigBanner_ibg{
+            transition: 1s;
+            filter: brightness(100%)
+        }
+        
+    }
+    &_ibg {
+        position: absolute;
+        z-index: 0;
+        object-fit: cover;
+        object-position: center;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        filter: brightness(80%);
+        transition: 1s;
+        
+    }
+
+    &_title {
+        font-size: 80px;
+        letter-spacing: 3px;
+        color: #fff;
+        font-family: Chicle;
+        margin-bottom: 50px;
+        line-height: 80/80 * 100%;
+        opacity: 0.9;
+    }
+
+    &_btn {
+        color: #080808;
+        background-color: rgba(255, 255, 255, 0.808);
+        border-radius: 30px;
+        padding: 15px 30px;
+        font-size: 16px;
+        transition: 0.5s;
+        &:hover{
+            transition: 0.5s;
+            background-color: rgba(255, 255, 255, 1);
+        }
+    }
+    &_btn-black{
+        margin-left: 15px;
+        background-color: #080808c0;
+        color: white;
+        &:hover{
+            transition: 0.5s;
+            background-color: #080808;
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        background: #080808;
+        position: relative;
+        width: 100%;
+        height: 80vh;
+    }
+
+    &__text-wrapper {
+        position: relative;
+        z-index: 10;
+        padding-left: 10vw;
+        
+    }
+}
+@media (max-width:530px) {
+    .bigBanner__text-wrapper{
+        padding-left: 10px;
+        
+    }
+    .bigBanner_title{
+        max-width: 200px;
+        font-size: 60px;
+    }
+}
+//--------------------------------
+.pageSection {
+    
+    &__container {
+        position: relative;
+        z-index: 100;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: nowrap;
+        position: relative;
+        transition: transform 0.5s ease;
+    }
+
+    &__card {
+        min-width: 286px;
+        height: 220px;
+        background-color: #1f1f1fd3;
+        border-radius: 20px;
+        font-size: 20px;
+        color: #fff;
+        margin-left: 15px;
+    }
+    &__btn{
+        position: absolute;
+        height: 220px;
+        width: 50px;
+        background-color: #080808e8;
+        border-radius: 20px 0px 0px 20px;
+        color: white;
+        opacity: 0;
+        transition: 0.5s;
+        font-size: 40px;
+        z-index: 100;
+        &:hover{
+            transition: 0.5s;
+            opacity: 1;
+        }
+        
+    }
+    &__btn-back{
+        left: 0;
+        top: 0;
+        
+    }
+    &__btn-next{
+        right: 0;
+        top: 0;
+    }
+}
+
+.pageSection__collection-better {
+position: relative;
+}
+.carousel-conteiner {
 }

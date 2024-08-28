@@ -15,31 +15,97 @@
       href="https://fonts.googleapis.com/css?family=Revalia:regular"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Chicle:regular"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/css/style.css" />
-
   </head>
   <body>
     <div class="wrapper">
       <header class="header__container __container">
         <nav class="header__nav">
-            <div class="header__main">
-                <div class="header__avatar">
-                    <img class="header_userimg" src="/img/index/header/user-svgrepo-com.svg" alt="">
-                </div>
-                <button class="header__part header_menu "><img class="header__part_img" src="/img/index/header/menu-dots-svgrepo-com (1).svg" alt=""></button>
-                <div class="header__links header__links-active">
-                    <span>Для вас</span>
-                </div>
-                <div class="header__links">
-                    <span>Библиотека</span>
-                </div>
+          <div class="header__main">
+            <button class="header__part header_menu">
+              <img
+                class="header__part_img"
+                src="/img/index/header/menu-dots-svgrepo-com (1).svg"
+                alt=""
+              />
+            </button>
+            <div class="header__links header__links-active">
+              <span>Подборки</span>
             </div>
-            <div class="header__settings">
-                <button id="" class="header__part header__part_search"><img class="header__part_img" src="/img/index/header/search-alt-svgrepo-com.svg" alt=""></button>
-                <button id="" class="header__part header__part_settings"><img class="header__part_img" src="/img/index/header/settings-svgrepo-com.svg" alt=""></button>
+            <div class="header__links">
+              <span>Каталог</span>
             </div>
+            <button id="" class="header__part header__part_search">
+              <img
+                class="header__part_img"
+                src="/img/index/header/search-alt-svgrepo-com.svg"
+                alt=""
+              />
+            </button>
+          </div>
+
+          <div class="header__settings">
+            <button class="header__avatar">
+              <img
+                class="header_userimg"
+                src="/img/index/header/user-svgrepo-com.svg"
+                alt=""
+              />
+            </button>
+            <button id="" class="header__part header__part_settings">
+              <img
+                class="header__part_img"
+                src="/img/index/header/settings-svgrepo-com.svg"
+                alt=""
+              />
+            </button>
+          </div>
         </nav>
       </header>
+      <main>
+        <div class="bigBanner">
+          <div class="bigBanner__container">
+            <img
+              class="bigBanner_ibg"
+              src="/img/index/banner/peace-1.jpg"
+              alt=""
+            />
+            <div class="bigBanner__text-wrapper">
+              <p class="bigBanner_title">Spirited Away</p>
+              <button class="bigBanner_btn">Смотреть</button>
+              <button class="bigBanner_btn bigBanner_btn-black">
+                О фильме
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pageSection__container">
+          <div class="pageSection__collection-better">
+            <button class="pageSection__btn pageSection__btn-back"><</button>
+            <div class="carousel-conteiner pageSection__cards">
+              <div class="pageSection__card">1</div>
+              <div class="pageSection__card">2</div>
+              <div class="pageSection__card">3</div>
+              <div class="pageSection__card">4</div>
+              <div class="pageSection__card">5</div>
+              <div class="pageSection__card">6</div>
+              <div class="pageSection__card">7</div>
+              <div class="pageSection__card">8</div>
+              <div class="pageSection__card">8</div>
+              <div class="pageSection__card">8</div>
+              <div class="pageSection__card">8</div>
+              <div class="pageSection__card">8</div>
+              
+            </div>
+            <button class="pageSection__btn pageSection__btn-next">></button>
+          </div>
+        </div>
+      </main>
     </div>
+    <script src="/js/carousel.js"></script>
   </body>
 </html>
