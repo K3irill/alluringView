@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WEB-SITE</title>
+    <title>CartoonNest</title>
     <link rel="shortcut icon" href="./img/mops.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,10 +30,10 @@
               />
             </button>
             <div class="header__links header__links-active">
-              <span>Подборки</span>
+              <span>Collection</span>
             </div>
             <div class="header__links">
-              <span>Каталог</span>
+              <span>Catalog</span>
             </div>
             <button id="" class="header__part header__part_search">
               <img
@@ -45,15 +45,19 @@
           </div>
 
           <div class="header__settings">
-            <button class="header__avatar">
+            <a href="/pages/signIn.html" class="header__avatar">
               <img
                 class="header_userimg"
                 src="/img/index/header/user-svgrepo-com.svg"
                 alt=""
               />
-            </button>
-            <button id="" class="header__part header__part_settings">
+            </a>
+            <button
+              id="headerSettings"
+              class="header__part header__part_settings"
+            >
               <img
+              id="headerSettingsBtn"
                 class="header__part_img"
                 src="/img/index/header/settings-svgrepo-com.svg"
                 alt=""
@@ -63,8 +67,22 @@
         </nav>
       </header>
       <main>
+        
         <div class="bigBanner">
+          <div id="headerSettings-menu" class="headerSettings hidden">
+            <p class="headerSettings_lang">Language</p>
+            <div class="language-wrap">
+              <button class="headerSettings_btn headerSettings_ru">RU</button>
+              <button class="headerSettings_btn headerSettings_EN">EN</button>
+            </div>
+            <p class="headerSettings_theme">Theme</p>
+            <div class="theme-wrap">
+              <span class="theme"></span>
+      
+            </div>
+          </div>
           <div class="bigBanner__container">
+            
             <img
               class="bigBanner_ibg"
               src="/img/index/banner/peace-1.jpg"
@@ -72,10 +90,8 @@
             />
             <div class="bigBanner__text-wrapper">
               <p class="bigBanner_title">Spirited Away</p>
-              <button class="bigBanner_btn">Смотреть</button>
-              <button class="bigBanner_btn bigBanner_btn-black">
-                О фильме
-              </button>
+              <button class="bigBanner_btn">Watch</button>
+              <button class="bigBanner_btn bigBanner_btn-black">About</button>
             </div>
           </div>
         </div>
@@ -151,9 +167,7 @@
                   src="/img/index/collections/soul.jpg"
                   alt=""
                 />
-                <h3 class="collection-better_film-name">
-                  Soul
-                </h3>
+                <h3 class="collection-better_film-name">Soul</h3>
               </div>
               <div class="pageSection__card">
                 <img
@@ -161,9 +175,7 @@
                   src="/img/index/collections/zootopia.jpg"
                   alt=""
                 />
-                <h3 class="collection-better_film-name">
-                  Zootopia
-                </h3>
+                <h3 class="collection-better_film-name">Zootopia</h3>
               </div>
               <div class="pageSection__card">
                 <img
@@ -171,9 +183,7 @@
                   src="/img/index/collections/ratatouille.jpg"
                   alt=""
                 />
-                <h3 class="collection-better_film-name">
-                  Ratatouille
-                </h3>
+                <h3 class="collection-better_film-name">Ratatouille</h3>
               </div>
               <div class="pageSection__card">
                 <img
@@ -181,9 +191,7 @@
                   src="/img/index/collections/madagascar.jpg"
                   alt=""
                 />
-                <h3 class="collection-better_film-name">
-                  Madagascar
-                </h3>
+                <h3 class="collection-better_film-name">Madagascar</h3>
               </div>
               <div class="pageSection__card">
                 <img
@@ -201,9 +209,7 @@
                   src="/img/index/collections/cars.jpg"
                   alt=""
                 />
-                <h3 class="collection-better_film-name">
-                  Cars
-                </h3>
+                <h3 class="collection-better_film-name">Cars</h3>
               </div>
               <div class="pageSection__card">
                 <img
@@ -218,7 +224,9 @@
           </div>
         </div>
       </main>
+      
     </div>
+    <script src="/js/script.js"></script>
     <script src="/js/carousel.js"></script>
   </body>
 </html>

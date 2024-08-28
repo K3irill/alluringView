@@ -1,6 +1,6 @@
 @import "reset.scss";
 body {
-    font-family: 'Caveat';
+    font-family: "Caveat";
 }
 .wrapper {
     min-height: 100%;
@@ -26,16 +26,16 @@ body {
         width: 100%;
         padding: 25px 50px;
     }
-    @media (max-width:518px) {
+    @media (max-width: 518px) {
         &__container {
             padding: 10px 15px;
         }
     }
-    &_menu{
+    &_menu {
         margin-left: 10px;
         display: none;
     }
-    
+
     &__nav {
         display: flex;
         justify-content: space-between;
@@ -51,12 +51,12 @@ body {
         color: #fff;
         cursor: pointer;
         transition: 0.5s;
-        &:hover{
+        &:hover {
             transition: 0.5s;
             opacity: 0.8;
         }
     }
-    
+
     &__avatar {
         width: 40px;
         height: 40px;
@@ -115,31 +115,92 @@ body {
                 }
             }
         }
-        
     }
 }
-@media (max-width:402px) {
+
+@media (max-width: 402px) {
     .header_menu {
         display: block;
     }
 }
-@media (max-width:402px) {
+@media (max-width: 402px) {
     .header__links {
         display: none;
     }
 }
+.headerSettings {
+    z-index: 1000;
+    position: absolute;
+    font-size: 24px;
+    padding: 10px;
+    width: 150px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    right: 20px;
+    top: 80px;
+    border-radius: 10px;
+    filter: blur(100);
+    &_lang {
+    }
+    &_btn {
+        background: transparent;
+        width: 30px;
+        &:hover {
+            background-color: #080808;
+            color: #fff;
+            border: 1px solid #ffffff;
+        }
+    }
+    &_theme {
+        margin-top: 10px;
+    }
+}
+.language-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    background-color: #fff;
+}
+.theme-wrap {
+    width: 60px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    display: flex;
 
+    padding: 5px;
+    cursor: pointer;
+}
+.theme-end {
+    border: 1px solid #ffffff;
+    justify-content: end;
+}
+.theme-wrap_light {
+    background-color: #fff;
+}
+.theme {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #000000;
+    border-radius: 50%;
+    animation-name: trans;
+}
+.theme_light {
+    background-color: #d3d1d160;
+}
+
+//---------------------------------------------
 .bigBanner {
+    position: relative;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     overflow: hidden;
     margin-bottom: -90px;
-    &:hover{
-        .bigBanner_ibg{
+    &:hover {
+        .bigBanner_ibg {
             transition: 1s;
-            filter: brightness(100%)
+            filter: brightness(100%);
         }
-        
     }
     &_ibg {
         position: absolute;
@@ -151,7 +212,6 @@ body {
         height: 100%;
         filter: brightness(80%);
         transition: 1s;
-        
     }
 
     &_title {
@@ -171,16 +231,16 @@ body {
         padding: 15px 30px;
         font-size: 16px;
         transition: 0.5s;
-        &:hover{
+        &:hover {
             transition: 0.5s;
             background-color: rgba(255, 255, 255, 1);
         }
     }
-    &_btn-black{
+    &_btn-black {
         margin-left: 15px;
         background-color: #080808c0;
         color: white;
-        &:hover{
+        &:hover {
             transition: 0.5s;
             background-color: #080808;
         }
@@ -193,37 +253,37 @@ body {
         position: relative;
         width: 100%;
         height: 80vh;
+        position: relative;
     }
 
     &__text-wrapper {
         position: relative;
         z-index: 10;
         padding-left: 10vw;
-        
     }
 }
-@media (max-width:530px) {
-    .bigBanner__text-wrapper{
+@media (max-width: 530px) {
+    .bigBanner__text-wrapper {
         padding-left: 10px;
-        
     }
-    .bigBanner_title{
+    .bigBanner_title {
         max-width: 200px;
         font-size: 60px;
     }
 }
 //--------------------------------
 .pageSection {
-    &__title{
+    &__title {
         text-align: center;
         font-size: 60px;
         margin-bottom: 20px;
         color: #fff;
         opacity: 0.8;
         font-weight: bold;
-        line-height: 50px
+        line-height: 50px;
     }
     &__collection-better {
+        margin-bottom: 20px;
     }
 }
 .collection-better {
@@ -243,19 +303,18 @@ body {
         color: #fff;
         margin-left: 15px;
         position: relative;
-        filter: brightness(60%);
+        filter: brightness(70%);
         transition: 0.5s;
         cursor: pointer;
         opacity: 0.95;
-        &:hover{
+        &:hover {
             transition: 0.5s;
-                transition: 1s;
-                filter: brightness(100%);
-                opacity: 1;
-            
+            transition: 1s;
+            filter: brightness(100%);
+            opacity: 1;
         }
     }
-    &_ibg{
+    &_ibg {
         position: absolute;
         z-index: 0;
         object-fit: cover;
@@ -264,7 +323,7 @@ body {
         width: 100%;
         height: 100%;
     }
-    &_film-name{
+    &_film-name {
         position: relative;
         z-index: 10;
         padding: 20px;
@@ -272,38 +331,36 @@ body {
         font-size: 44px;
         line-height: 50/44 * 100%;
     }
-    &_text{
-        font-family: 'Caveat';
+    &_text {
+        font-family: "Caveat";
         position: relative;
         z-index: 10;
         font-size: 18px;
         padding: 0px 20px 10px 20px;
     }
 }
-@media (max-width:1023px) {
-    .collection-better_film-name{
+@media (max-width: 1023px) {
+    .collection-better_film-name {
         font-size: 24px;
     }
-    .collection-better_text{
+    .collection-better_text {
         font-size: 16px;
     }
 }
-@media (max-width:719px) {
-    .collection-better{
+@media (max-width: 719px) {
+    .collection-better {
         flex-wrap: wrap;
     }
-    .collection-better__card{
+    .collection-better__card {
         margin: 0 10px;
         margin-bottom: 10px;
-
     }
-    .pageSection__title{
+    .pageSection__title {
         font-size: 40px;
     }
 }
 
 .pageSection {
-    
     &__container {
         position: relative;
         z-index: 100;
@@ -334,15 +391,14 @@ body {
         transition: 0.5s;
         cursor: pointer;
         opacity: 0.95;
-        &:hover{
+        &:hover {
             transition: 0.5s;
-                transition: 1s;
-                filter: brightness(100%);
-                opacity: 1;
-            
+            transition: 1s;
+            filter: brightness(100%);
+            opacity: 1;
         }
     }
-    &__btn{
+    &__btn {
         position: absolute;
         height: 220px;
         width: 50px;
@@ -353,25 +409,30 @@ body {
         transition: 0.5s;
         font-size: 40px;
         z-index: 100;
-        &:hover{
+        &:hover {
             transition: 0.5s;
             opacity: 1;
         }
-        
     }
-    &__btn-back{
+    &__btn-back {
         left: 0;
         top: 0;
-        
     }
-    &__btn-next{
+    &__btn-next {
         right: 0;
         top: 0;
     }
 }
 
 .pageSection__collection-better {
-position: relative;
+    position: relative;
 }
 .carousel-conteiner {
+}
+.title_dark {
+    color: #080808;
+}
+
+.hidden {
+    display: none;
 }
