@@ -60,6 +60,7 @@
 position: absolute;
 z-index: 100;
 top: 45%;
+text-shadow: 1px 1px 10px black
 }
 @media screen and (max-width: 768px) {
     .card-wrapper {

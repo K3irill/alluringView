@@ -338,6 +338,16 @@ body {
     font-size: 60px;
   }
 }
+.pageSection__horror-title::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: -10px;
+  transform: rotate(30deg);
+  background: url(https://www.stickpng.com/img/download/580b585b2edbce24c47b2947/image);
+  background-size: contain;
+}
 .pageSection__title {
   text-align: center;
   font-size: 60px;
@@ -347,6 +357,7 @@ body {
   font-weight: bold;
   line-height: 50px;
   text-shadow: 1px 1px 30px white;
+  position: relative;
 }
 .pageSection__collection-better {
   margin-bottom: 20px;
@@ -370,15 +381,17 @@ body {
   margin-left: 15px;
   position: relative;
   filter: brightness(70%);
-  transition: 0.5s;
   cursor: pointer;
   opacity: 0.95;
+  transition: 0.5s ease-in-out;
+  transform: translateZ(0);
 }
 .collection-better__card:hover {
   transition: 0.5s;
-  transition: 1s;
   filter: brightness(100%);
   opacity: 1;
+  transform: translateY(-20px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 .collection-better_ibg {
   position: absolute;
