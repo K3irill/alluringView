@@ -1,4 +1,3 @@
-"use strict";
 const wrapper = document.querySelector(".wrapper");
 const headerSettingsBtn = document.getElementById("headerSettingsBtn");
 const headerSettingsMenu = document.getElementById("headerSettings-menu");
@@ -23,38 +22,56 @@ function changePositionSpan(params) {
 }
 changeBtn.addEventListener("click", () => changePositionSpan());
 
-
-
 const input = document.getElementById("text-input");
 const button = document.getElementById("check-btn");
 const textResult = document.getElementById("result");
 
-function check(){
-  if(input.value == ''){
-    alert("Please input a value")
-  }else{
-let inputValue = input.value.toLowerCase();
-  let newArr = [];
+var falling = true;
 
-  inputValue.split('').forEach(el => {
-    if(el !== ' ' && el == el.match(/[a-z]/)|| el !== ' ' && el == el.match(/[0-9]/)){
-    newArr.push(el)
-  }
-})
-console.log(newArr.join(''))
-console.log(newArr.reverse().join(""))
+TweenLite.set("#wrapper", { perspective: 600 });
+TweenLite.set(".dot", { xPercent: "-50%", yPercent: "-50%" });
 
-  if(newArr.join("") == newArr.reverse().join("")){
+var total = 30;
+var container = document.getElementById("wrapper"),
+  w = window.innerWidth,
+  h = (window.innerHeight = 3000);
 
-    textResult.innerText = `${input.value} is a palindrome`
-  }else {
-    textResult.innerText = `${input.value} is not a palindrome`
-  }
-
-  }
-
-
-
+for (let i = 0; i < total; i++) {
+  var Div = document.createElement("div");
+  TweenLite.set(Div, {
+    attr: { class: "dot" },
+    x: R(0, w),
+    y: R(-200, -150),
+    z: R(-200, 200),
+  });
+  container.appendChild(Div);
+  animm(Div);
 }
 
-button.addEventListener("click", check);
+function animm(elm) {
+  TweenMax.to(elm, R(20, 35), {
+    y: h + 100,
+    ease: Linear.easeNone,
+    repeat: -1,
+    delay: 0,
+  });
+  TweenMax.to(elm, R(4, 8), {
+    x: "+=100",
+    rotationZ: R(0, 180),
+    repeat: -1,
+    yoyo: true,
+    ease: Sine.easeInOut,
+  });
+  TweenMax.to(elm, R(2, 8), {
+    rotationX: R(0, 360),
+    rotationY: R(0, 360),
+    repeat: -1,
+    yoyo: true,
+    ease: Sine.easeInOut,
+    delay: -5,
+  });
+}
+
+function R(min, max) {
+  return min + Math.random() * (max - min);
+}

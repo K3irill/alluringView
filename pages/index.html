@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CartoonNest</title>
+<!--  -->
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+<!--  -->
     <link rel="shortcut icon" href="./img/mops.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +27,7 @@
     <link rel="stylesheet" href="/css/swiper-style.css" />
   </head>
   <body>
-    <div class="wrapper">
+    <div id="wrapper" class="wrapper">
       <header class="header__container __container">
         <nav class="header__nav">
           <div class="header__main">
@@ -72,6 +76,7 @@
         </nav>
       </header>
       <main>
+        
         <div class="bigBanner">
           <div id="headerSettings-menu" class="headerSettings hidden">
             <p class="headerSettings_lang">Language</p>
@@ -214,7 +219,7 @@
                       alt=""
                       class="card-img"
                     />
-                    <p class=" card-text collection-better_film-name">
+                    <p class="card-text collection-better_film-name">
                       Madagascar
                     </p>
                   </a>
@@ -226,7 +231,7 @@
                       alt=""
                       class="card-img"
                     />
-                    <p class="card-text collection-better_film-name ">
+                    <p class="card-text collection-better_film-name">
                       ArthuretlesMinimoys
                     </p>
                   </a>
@@ -251,9 +256,7 @@
                       alt=""
                       class="card-img"
                     />
-                    <p class="card-text collection-better_film-name">
-                      Up
-                    </p>
+                    <p class="card-text collection-better_film-name">Up</p>
                   </a>
                 </li>
                 <li class="card-item swiper-slide">
@@ -285,9 +288,7 @@
                       alt=""
                       class="card-img"
                     />
-                    <p class="card-text collection-better_film-name">
-                      Ralph
-                    </p>
+                    <p class="card-text collection-better_film-name">Ralph</p>
                   </a>
                 </li>
                 <li class="card-item swiper-slide">
@@ -297,7 +298,7 @@
                       alt=""
                       class="card-img"
                     />
-                    <p class=" card-text collection-better_film-name">
+                    <p class="card-text collection-better_film-name">
                       How To Your Dragon
                     </p>
                   </a>
@@ -309,9 +310,7 @@
                       alt=""
                       class="card-img"
                     />
-                    <p class="card-text collection-better_film-name ">
-                      Ice Age
-                    </p>
+                    <p class="card-text collection-better_film-name">Ice Age</p>
                   </a>
                 </li>
               </ul>
@@ -345,7 +344,9 @@
                       alt=""
                       class="card-img"
                     />
-                    <p class="card-text collection-better_film-name">The Iroon Giant</p>
+                    <p class="card-text collection-better_film-name">
+                      The Iroon Giant
+                    </p>
                   </a>
                 </li>
                 <li class="card-item swiper-slide">
@@ -379,7 +380,7 @@
                       alt=""
                       class="card-img"
                     />
-                    <p class=" card-text collection-better_film-name">
+                    <p class="card-text collection-better_film-name">
                       Ernest et Célestine
                     </p>
                   </a>
@@ -391,9 +392,7 @@
                       alt=""
                       class="card-img"
                     />
-                    <p class="card-text collection-better_film-name ">
-                      Coco
-                    </p>
+                    <p class="card-text collection-better_film-name">Coco</p>
                   </a>
                 </li>
               </ul>
@@ -404,7 +403,9 @@
           </div>
         </div>
         <div class="pageSection__container">
-          <h2 class="pageSection__title pageSection__horror-title">Horror</h2>
+          <div class="title-wrapper">
+            <h2 class="pageSection__title pageSection__horror-title">Horror</h2>
+          </div>
           <div class="container swiper">
             <div class="card-wrapper">
               <ul class="card-list swiper-wrapper">
@@ -415,9 +416,7 @@
                       alt=""
                       class="card-img"
                     />
-                    <p class="card-text collection-better_film-name">
-                      9
-                    </p>
+                    <p class="card-text collection-better_film-name">9</p>
                   </a>
                 </li>
                 <li class="card-item swiper-slide">
@@ -427,7 +426,9 @@
                       alt=""
                       class="card-img"
                     />
-                    <p class="card-text collection-better_film-name">Monster House</p>
+                    <p class="card-text collection-better_film-name">
+                      Monster House
+                    </p>
                   </a>
                 </li>
                 <li class="card-item swiper-slide">
@@ -461,7 +462,7 @@
                       alt=""
                       class="card-img"
                     />
-                    <p class=" card-text collection-better_film-name">
+                    <p class="card-text collection-better_film-name">
                       Dead Space
                     </p>
                   </a>
@@ -473,7 +474,7 @@
                       alt=""
                       class="card-img"
                     />
-                    <p class="card-text collection-better_film-name ">
+                    <p class="card-text collection-better_film-name">
                       The Cropse Bride
                     </p>
                   </a>
@@ -487,9 +488,11 @@
         </div>
       </main>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/js/script.js"></script>
     <script src="/js/swiper.js"></script>
+    
     <!-- <script src="/js/carousel.js"></script> -->
   </body>
 </html>

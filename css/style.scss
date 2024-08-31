@@ -271,19 +271,11 @@ body {
     }
 }
 //--------------------------------
+.title-wrapper {
+    display: flex;
+    justify-content: center;
+}
 .pageSection {
-    &__horror-title {
-        &::after {
-            content: "";
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            top: -10px;
-            transform: rotate(30deg);
-            background: url(https://www.stickpng.com/img/download/580b585b2edbce24c47b2947/image);
-            background-size: contain;
-        }
-    }
     &__title {
         text-align: center;
         font-size: 60px;
@@ -294,6 +286,35 @@ body {
         line-height: 50px;
         text-shadow: 1px 1px 30px white;
         position: relative;
+    }
+    &__horror-title {
+        position: relative;
+
+        text-shadow: 1px 1px 30px rgb(218, 29, 29);
+        width: 270px;
+        align-items: center;
+        &::before {
+            content: "";
+
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: -15px;
+            left: 0;
+            transform: rotate(-35deg);
+            background: url(https://www.stickpng.com/img/download/580b585b2edbce24c47b2947/image);
+            background-size: contain;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: -10px;
+            transform: rotate(30deg);
+            background: url(https://www.stickpng.com/img/download/580b585b2edbce24c47b2947/image);
+            background-size: contain;
+        }
     }
     &__collection-better {
         margin-bottom: 20px;
@@ -467,4 +488,13 @@ body {
     width: 100%;
 
     border: 1px solid #505050;
+}
+
+.dot {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: 1000;
+    background: url(/img/index/leaf-autumn-fall-svgrepo-com.svg);
+    background-size: 100% 100%;
 }
