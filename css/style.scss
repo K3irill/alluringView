@@ -290,29 +290,16 @@ body {
     &__horror-title {
         position: relative;
 
-        text-shadow: 1px 1px 30px rgb(218, 29, 29);
+        text-shadow: 1px 1px 30px rgb(218, 215, 29);
         width: 270px;
         align-items: center;
-        &::before {
-            content: "";
-
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            top: -15px;
-            left: 0;
-            transform: rotate(-35deg);
-            background: url(https://www.stickpng.com/img/download/580b585b2edbce24c47b2947/image);
-            background-size: contain;
-        }
         &::after {
             content: "";
             position: absolute;
             width: 80px;
             height: 80px;
             top: -10px;
-            transform: rotate(30deg);
-            background: url(https://www.stickpng.com/img/download/580b585b2edbce24c47b2947/image);
+            background: url(/img/index/collections/jack-lanterns-autumn-svgrepo-com.svg);
             background-size: contain;
         }
     }

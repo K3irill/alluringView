@@ -75,3 +75,24 @@ function animm(elm) {
 function R(min, max) {
   return min + Math.random() * (max - min);
 }
+
+const bigBannerIBG = document.querySelector(".bigBanner_ibg");
+
+const bannerImgUrls = [
+  "/img/index/banner/spirited.gif",
+  "https://i.pinimg.com/originals/c4/f4/ab/c4f4ab6daec6f7ac60bfac99e1ed9286.jpg",
+  "/img/index/banner/peace.jpg",
+  "/img/index/banner/peace-1.jpg",
+];
+
+let currentImgUrl = 0;
+const totalImgUrl = bannerImgUrls.length;
+
+function changeBannerImg() {
+  currentImgUrl = (currentImgUrl + 1) % totalImgUrl;
+  bigBannerIBG.src = bannerImgUrls[currentImgUrl];
+}
+
+setInterval(() => {
+  changeBannerImg();
+}, 15000);
