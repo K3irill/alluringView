@@ -346,6 +346,7 @@ body {
   opacity: 0.8;
   font-weight: bold;
   line-height: 50px;
+  text-shadow: 1px 1px 30px white;
 }
 .pageSection__collection-better {
   margin-bottom: 20px;
@@ -397,6 +398,7 @@ body {
   font-family: Chicle;
   font-size: 44px;
   line-height: 113.6363636364%;
+  color: #fff;
 }
 .collection-better_text {
   font-family: "Caveat";
@@ -414,7 +416,7 @@ body {
     font-size: 16px;
   }
 }
-@media (max-width: 719px) {
+@media (max-width: 841px) {
   .collection-better {
     flex-wrap: wrap;
   }
@@ -440,6 +442,7 @@ body {
 .pageSection__container {
   position: relative;
   z-index: 100;
+  margin-top: 60px;
 }
 .pageSection__cards {
   display: flex;
@@ -507,4 +510,10 @@ body {
 
 .hidden {
   display: none;
+}
+
+.hr {
+  margin-top: 60px;
+  width: 100%;
+  border: 1px solid #505050;
 }/*# sourceMappingURL=style.css.map */

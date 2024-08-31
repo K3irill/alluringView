@@ -22,3 +22,39 @@ function changePositionSpan(params) {
   });
 }
 changeBtn.addEventListener("click", () => changePositionSpan());
+
+
+
+const input = document.getElementById("text-input");
+const button = document.getElementById("check-btn");
+const textResult = document.getElementById("result");
+
+function check(){
+  if(input.value == ''){
+    alert("Please input a value")
+  }else{
+let inputValue = input.value.toLowerCase();
+  let newArr = [];
+
+  inputValue.split('').forEach(el => {
+    if(el !== ' ' && el == el.match(/[a-z]/)|| el !== ' ' && el == el.match(/[0-9]/)){
+    newArr.push(el)
+  }
+})
+console.log(newArr.join(''))
+console.log(newArr.reverse().join(""))
+
+  if(newArr.join("") == newArr.reverse().join("")){
+
+    textResult.innerText = `${input.value} is a palindrome`
+  }else {
+    textResult.innerText = `${input.value} is not a palindrome`
+  }
+
+  }
+
+
+
+}
+
+button.addEventListener("click", check);

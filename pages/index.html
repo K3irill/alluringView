@@ -15,7 +15,12 @@
       href="https://fonts.googleapis.com/css?family=Chicle:regular"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/swiper-style.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -150,87 +155,341 @@
             </div>
           </div>
         </div>
-        <br />
+
         <div class="pageSection__container">
           <h2 class="pageSection__title">Collections</h2>
-          <div class="pageSection__collection-better">
-            <button class="pageSection__btn pageSection__btn-back"><</button>
-            <div class="carousel-conteiner pageSection__cards">
-              <div class="pageSection__card">
-                <img
-                  class="collection-better_ibg"
-                  src="/img/index/banner/ходячийзамок.jpeg"
-                  alt=""
-                />
-                <h3 class="collection-better_film-name">
-                  Howl’s Moving Castle
-                </h3>
-              </div>
-              <div class="pageSection__card">
-                <img
-                  class="collection-better_ibg"
-                  src="/img/index/collections/soul.jpg"
-                  alt=""
-                />
-                <h3 class="collection-better_film-name">Soul</h3>
-              </div>
-              <div class="pageSection__card">
-                <img
-                  class="collection-better_ibg"
-                  src="/img/index/collections/zootopia.jpg"
-                  alt=""
-                />
-                <h3 class="collection-better_film-name">Zootopia</h3>
-              </div>
-              <div class="pageSection__card">
-                <img
-                  class="collection-better_ibg"
-                  src="/img/index/collections/ratatouille.jpg"
-                  alt=""
-                />
-                <h3 class="collection-better_film-name">Ratatouille</h3>
-              </div>
-              <div class="pageSection__card">
-                <img
-                  class="collection-better_ibg"
-                  src="/img/index/collections/madagascar.jpg"
-                  alt=""
-                />
-                <h3 class="collection-better_film-name">Madagascar</h3>
-              </div>
-              <div class="pageSection__card">
-                <img
-                  class="collection-better_ibg"
-                  src="/img/index/collections/ArthuretlesMinimoys.jpg"
-                  alt=""
-                />
-                <h3 class="collection-better_film-name">
-                  Arthur et les Minimoys
-                </h3>
-              </div>
-              <div class="pageSection__card">
-                <img
-                  class="collection-better_ibg"
-                  src="/img/index/collections/cars.jpg"
-                  alt=""
-                />
-                <h3 class="collection-better_film-name">Cars</h3>
-              </div>
-              <div class="pageSection__card">
-                <img
-                  class="collection-better_ibg"
-                  src="/img/index/banner/тоторо.jpg"
-                  alt=""
-                />
-                <h3 class="collection-better_film-name">My Neighbor Totoro</h3>
-              </div>
+          <div class="container swiper">
+            <div class="card-wrapper">
+              <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/banner/ходячийзамок.jpeg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name">
+                      Howl’s Moving Castle
+                    </p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/soul.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name">Soul</p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/zootopia.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name">
+                      Zootopia
+                    </p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/ratatouille.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name">
+                      Ratatouille
+                    </p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/madagascar.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class=" card-text collection-better_film-name">
+                      Madagascar
+                    </p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/ArthuretlesMinimoys.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name ">
+                      ArthuretlesMinimoys
+                    </p>
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-slide-button swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
             </div>
-            <button class="pageSection__btn pageSection__btn-next">></button>
+          </div>
+        </div>
+        <!-- <hr class="hr"  /> -->
+        <div class="pageSection__container">
+          <h2 class="pageSection__title">Adventure</h2>
+          <div class="container swiper">
+            <div class="card-wrapper">
+              <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/banner/ходячийзамок.jpeg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name">
+                      Howl’s Moving Castle
+                    </p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/soul.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name">Soul</p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/zootopia.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name">
+                      Zootopia
+                    </p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/ratatouille.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name">
+                      Ratatouille
+                    </p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/madagascar.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class=" card-text collection-better_film-name">
+                      Madagascar
+                    </p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/ArthuretlesMinimoys.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name ">
+                      ArthuretlesMinimoys
+                    </p>
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-slide-button swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+        <div class="pageSection__container">
+          <h2 class="pageSection__title">Deep sense</h2>
+          <div class="container swiper">
+            <div class="card-wrapper">
+              <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/banner/ходячийзамок.jpeg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name">
+                      Howl’s Moving Castle
+                    </p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/soul.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name">Soul</p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/zootopia.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name">
+                      Zootopia
+                    </p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/ratatouille.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name">
+                      Ratatouille
+                    </p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/madagascar.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class=" card-text collection-better_film-name">
+                      Madagascar
+                    </p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/ArthuretlesMinimoys.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name ">
+                      ArthuretlesMinimoys
+                    </p>
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-slide-button swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+        <div class="pageSection__container">
+          <h2 class="pageSection__title">Anime</h2>
+          <div class="container swiper">
+            <div class="card-wrapper">
+              <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/banner/ходячийзамок.jpeg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name">
+                      Howl’s Moving Castle
+                    </p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/soul.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name">Soul</p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/zootopia.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name">
+                      Zootopia
+                    </p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/ratatouille.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name">
+                      Ratatouille
+                    </p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/madagascar.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class=" card-text collection-better_film-name">
+                      Madagascar
+                    </p>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="/img/index/collections/ArthuretlesMinimoys.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                    <p class="card-text collection-better_film-name ">
+                      ArthuretlesMinimoys
+                    </p>
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-slide-button swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
           </div>
         </div>
       </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/js/script.js"></script>
-    <script src="/js/carousel.js"></script>
+    <script src="/js/swiper.js"></script>
+    <!-- <script src="/js/carousel.js"></script> -->
   </body>
 </html>
