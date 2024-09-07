@@ -7,8 +7,8 @@ app = Flask(__name__)
 CORS(app)  # Включаем CORS для всех маршрутов
 
 def load_movies():
-    data_dir = 'C:\\Users\\User\\Desktop\\cartoons\\js\\data'
-    movie_files = ['top_20.json', 'family.json', 'popular-movie.json', 'catastrofa.json',]  # Удалили отсутствующие файлы
+    data_dir = 'C:\\Users\\User\\Desktop\\cartoons\\scripts\\data'
+    movie_files = ['top_20.json', 'family.json', 'popular-movie.json', 'disaster.json',]  # Удалили отсутствующие файлы
     all_movies = []
 
     for file_name in movie_files:
