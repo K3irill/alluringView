@@ -1,0 +1,724 @@
+{
+  "theme": "popular-movie",
+  "total": 20,
+  "totalPages": 1,
+  "items": [
+    {
+      "kinopoiskId": 4887347,
+      "imdbId": "tt18412256",
+      "nameRu": "Чужой: Ромул",
+      "nameEn": null,
+      "nameOriginal": "Alien: Romulus",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Великобритания"
+        },
+        {
+          "country": "Австралия"
+        },
+        {
+          "country": "Канада"
+        },
+        {
+          "country": "Новая Зеландия"
+        },
+        {
+          "country": "Венгрия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "фантастика"
+        },
+        {
+          "genre": "ужасы"
+        }
+      ],
+      "ratingKinopoisk": 7.2,
+      "ratingImdb": 7.4,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/4887347.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/4887347.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "Исследуя заброшенную космическую станцию, группа колонизаторов сталкивается с самой ужасающей формой жизни во Вселенной.",
+      "ratingAgeLimits": null
+    },
+    {
+      "kinopoiskId": 1008444,
+      "imdbId": "tt6263850",
+      "nameRu": "Дэдпул и Росомаха",
+      "nameEn": null,
+      "nameOriginal": "Deadpool & Wolverine",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Австралия"
+        },
+        {
+          "country": "Канада"
+        },
+        {
+          "country": "Новая Зеландия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "фантастика"
+        },
+        {
+          "genre": "приключения"
+        },
+        {
+          "genre": "боевик"
+        },
+        {
+          "genre": "комедия"
+        }
+      ],
+      "ratingKinopoisk": 7.7,
+      "ratingImdb": 8.1,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1008444.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1008444.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "Уэйд Уилсон попадает в организацию «Управление временными изменениями», что вынуждает его вернуться к своему альтер-эго Дэдпулу и изменить историю с помощью Росомахи.",
+      "ratingAgeLimits": null
+    },
+    {
+      "kinopoiskId": 441406,
+      "imdbId": "tt1340094",
+      "nameRu": "Ворон",
+      "nameEn": null,
+      "nameOriginal": "The Crow",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Франция"
+        },
+        {
+          "country": "Великобритания"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "криминал"
+        },
+        {
+          "genre": "мелодрама"
+        },
+        {
+          "genre": "боевик"
+        },
+        {
+          "genre": "фэнтези"
+        }
+      ],
+      "ratingKinopoisk": 6,
+      "ratingImdb": 4.8,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/441406.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/441406.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "Пожертвовав собой, чтобы спасти возлюбленную, Эрик Дрэйвен застревает между мирами живых и мёртвых. Он возвращается с того света, чтобы свести счёты с убийцами. Отныне он — Ворон, жаждущий справедливости, и его месть будет жестока как никогда.",
+      "ratingAgeLimits": "age18"
+    },
+    {
+      "kinopoiskId": 5307156,
+      "imdbId": null,
+      "nameRu": "Лунтик. Возвращение домой",
+      "nameEn": null,
+      "nameOriginal": null,
+      "countries": [
+        {
+          "country": "Россия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "фантастика"
+        },
+        {
+          "genre": "приключения"
+        },
+        {
+          "genre": "мультфильм"
+        },
+        {
+          "genre": "детский"
+        }
+      ],
+      "ratingKinopoisk": 6.9,
+      "ratingImdb": null,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/5307156.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/5307156.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "Новые приключения Лунтика и его друзей — кузнечика Кузи,​ Пчеленка, бабочки Элины, гусениц Вупсня и Пупсня и других.​ На этот раз веселая компания решает помочь Лунтику найти маму и вернуться домой на Луну. Для этого Лунтику необходимо взобраться на Чёрную гору, дорога на которую полна приключений и опасностей.",
+      "ratingAgeLimits": "age0"
+    },
+    {
+      "kinopoiskId": 5510094,
+      "imdbId": null,
+      "nameRu": "Ловушка",
+      "nameEn": null,
+      "nameOriginal": "Trap",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Великобритания"
+        },
+        {
+          "country": "Йемен"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "криминал"
+        }
+      ],
+      "ratingKinopoisk": 6.4,
+      "ratingImdb": 6.2,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/5510094.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/5510094.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "Купер приходит вместе с дочерью на концерт, который оказывается ловушкой для поимки серийного убийцы.",
+      "ratingAgeLimits": null
+    },
+    {
+      "kinopoiskId": 968031,
+      "imdbId": "tt4978420",
+      "nameRu": "Бордерлендс",
+      "nameEn": null,
+      "nameOriginal": "Borderlands",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Венгрия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "фантастика"
+        },
+        {
+          "genre": "боевик"
+        },
+        {
+          "genre": "комедия"
+        }
+      ],
+      "ratingKinopoisk": 5.8,
+      "ratingImdb": 4.3,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/968031.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/968031.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/1534341/2a000001912bae52132ca986a15b26adf6b5/orig",
+      "logoUrl": null,
+      "description": "Вселенски известная охотница за головами Лилит получает задание отправиться на планету Пандора, где прошло её трудное детство, и вызволить из заточения похищенную бандитами дочку межгалактического бизнесмена Атласа. На месте выясняется, что девочку никто против воли не удерживает, и она весело проводит время в сомнительной компании, а также все считают её Избранной, способной открыть некое легендарное Хранилище.",
+      "ratingAgeLimits": "age18"
+    },
+    {
+      "kinopoiskId": 5377540,
+      "imdbId": "tt28623186",
+      "nameRu": "Обе две",
+      "nameEn": null,
+      "nameOriginal": null,
+      "countries": [
+        {
+          "country": "Россия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "комедия"
+        }
+      ],
+      "ratingKinopoisk": null,
+      "ratingImdb": null,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/5377540.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/5377540.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "Дерзкая четырнадцатилетняя Глаша живёт с бабушкой в Шуе и мечтает стать известным режиссёром. После смерти бабушки опеку над девочкой должна взять её старшая авторитарная тётка Валя. Однако свободолюбивая Глаша решает сбежать от неё в Москву к младшей тете — воздушно-романтичной Ане. Правда, девушка не готова взять на себя заботу о своевольной Глаше. Неожиданно по воле обстоятельств они вместе отправляются в совместное путешествие, которое в итоге изменит их обеих.",
+      "ratingAgeLimits": "age12"
+    },
+    {
+      "kinopoiskId": 5249455,
+      "imdbId": "tt27114092",
+      "nameRu": "Майор Гром: Игра",
+      "nameEn": null,
+      "nameOriginal": null,
+      "countries": [
+        {
+          "country": "Россия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "приключения"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "ratingKinopoisk": 7.5,
+      "ratingImdb": 6.2,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/5249455.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/5249455.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/224348/2a0000018ef405da511b723784ddfb1fcded/orig",
+      "logoUrl": null,
+      "description": "Майор полиции Игорь Гром известен всему Санкт-Петербургу пробивным характером и непримиримой позицией по отношению к преступникам всех мастей. Неимоверная сила, аналитический склад ума и неподкупность — всё это делает майора Грома самым настоящим супергероем. Его жизнь идеальна: днём он ловит преступников вместе с напарником Димой Дубиным, а вечера проводит в компании журналистки Юлии Пчёлкиной. Полную идиллию прерывает появление в городе таинственного злодея, называющего себя Призраком. Он предлагает Грому сыграть в опасную игру, ставка в которой — жизни обычных людей.",
+      "ratingAgeLimits": "age16"
+    },
+    {
+      "kinopoiskId": 5212124,
+      "imdbId": null,
+      "nameRu": "Собиратель душ",
+      "nameEn": null,
+      "nameOriginal": "Longlegs",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Канада"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "детектив"
+        },
+        {
+          "genre": "ужасы"
+        }
+      ],
+      "ratingKinopoisk": 6.3,
+      "ratingImdb": 7.1,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/5212124.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/5212124.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "По оценкам ФБР, лишь один из пяти серийных убийц попадает в руки закона, а остальные остаются на свободе. Агент Ли Харкер охотится за одним из таких неуловимых чудовищ по прозвищу Собиратель душ. Более десяти лет его жертвами становились целые семьи, члены которых по непонятными причинам убивали друг друга. Чем ближе Харкер подбирается к разгадке личности убийцы, тем отчетливее понимает, что между ними есть связь.",
+      "ratingAgeLimits": "age18"
+    },
+    {
+      "kinopoiskId": 5459137,
+      "imdbId": null,
+      "nameRu": "Рай под ногами матерей",
+      "nameEn": null,
+      "nameOriginal": "Бейиш эненин таманында",
+      "countries": [
+        {
+          "country": "Кыргызстан"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "драма"
+        }
+      ],
+      "ratingKinopoisk": 8.3,
+      "ratingImdb": 8.9,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/5459137.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/5459137.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/212840/2a000001915b60530b3ae4ba4de7e45ec5cc/orig",
+      "logoUrl": null,
+      "description": "История 35-летнего Адиля, особого человека, умственное развитие которого осталось на уровне 8-летнего ребенка. Адил живет в небольшом селе со своей 75-летней матерью, Райхан апа, которая всегда говорит Адилю, что его Всевышний любит по-особому, и потому он попадет прямиком в Рай. Но Адил не хочет в Рай без своей мамы. Однажды он узнает от другого 8-летнего мальчика, что если отвести маму пешком в священный город Мекку, то мама может попасть в Рай.",
+      "ratingAgeLimits": "age18"
+    },
+    {
+      "kinopoiskId": 1334852,
+      "imdbId": null,
+      "nameRu": "Сто лет тому вперёд",
+      "nameEn": null,
+      "nameOriginal": null,
+      "countries": [
+        {
+          "country": "Россия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "фантастика"
+        },
+        {
+          "genre": "приключения"
+        }
+      ],
+      "ratingKinopoisk": 7.4,
+      "ratingImdb": 6,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1334852.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1334852.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "Они живут в разных мирах. Коля Герасимов — в Москве 2024 года, Алиса Селезнёва — на сто лет позже. Коля — обычный старшеклассник, ему нет дела до будущего. Алису не отпускает прошлое: она пытается найти маму, которая пропала, сражаясь с космическими пиратами. Встреча Алисы и Коли станет началом невероятных приключений.",
+      "ratingAgeLimits": "age12"
+    },
+    {
+      "kinopoiskId": 4766559,
+      "imdbId": "tt16366836",
+      "nameRu": "Веном 3: Последний танец",
+      "nameEn": null,
+      "nameOriginal": "Venom: The Last Dance",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Великобритания"
+        },
+        {
+          "country": "Мексика"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "фантастика"
+        },
+        {
+          "genre": "приключения"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "ratingKinopoisk": null,
+      "ratingImdb": null,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/4766559.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/4766559.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "Приспособившись к совместному существованию, Эдди и Веном стали друзьями и вместе сражаются со злодеями. Но теперь за Эдди охотятся военные, а за Веномом — его инопланетные сородичи, угрожающие всему живому.",
+      "ratingAgeLimits": null
+    },
+    {
+      "kinopoiskId": 4414587,
+      "imdbId": "tt5177120",
+      "nameRu": "Министерство неджентльменских дел",
+      "nameEn": null,
+      "nameOriginal": "The Ministry of Ungentlemanly Warfare",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Великобритания"
+        },
+        {
+          "country": "Турция"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "боевик"
+        },
+        {
+          "genre": "комедия"
+        },
+        {
+          "genre": "военный"
+        },
+        {
+          "genre": "история"
+        }
+      ],
+      "ratingKinopoisk": 7.3,
+      "ratingImdb": 6.8,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/4414587.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/4414587.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/224348/2a0000018f3e89a200cf1fd5a46d92eb7fc5/orig",
+      "logoUrl": null,
+      "description": "1942 год, Великобритания. Они — лучшие из лучших. Отпетые авантюристы и первоклассные спецы, привыкшие действовать в одиночку. Но когда на кону стоит судьба всего мира, им приходится объединиться в сверхсекретное боевое подразделение и отправиться на выполнение дерзкой миссии против нацистов. Теперь их дело — война, и вести они её будут совершенно не по-джентльменски.",
+      "ratingAgeLimits": "age18"
+    },
+    {
+      "kinopoiskId": 5118763,
+      "imdbId": null,
+      "nameRu": "Виды доброты",
+      "nameEn": null,
+      "nameOriginal": "Kinds of Kindness",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Великобритания"
+        },
+        {
+          "country": "Ирландия"
+        },
+        {
+          "country": "Греция"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "комедия"
+        }
+      ],
+      "ratingKinopoisk": 6.8,
+      "ratingImdb": 7,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/5118763.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/5118763.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "История первая: Смерть Р. М. Ф. \nПоследние 10 лет офисный работник Роберт живёт по строгим указаниям своего босса Рэймонда, который не забывает финансово благодарить подопечного и обеспечивать ему красивую жизнь. Рэймонд в записках указывает, когда Роберту нужно заниматься сексом с женой, что ему читать, когда и что есть и какой у него должен быть распорядок дня. Однажды Рэймонд приказывает Роберту устроить автокатастрофу с обязательной госпитализацией.\nИстория вторая: Р. М. Ф. летит. \nПолицейский Дэниэл не находит себе места, поскольку его жена-исследовательница Лиз пропадает без вести вместе с коллегами во время морской экспедиции. К счастью, поиски заканчиваются успешно, и любимая супруга после небольшого пребывания в больнице возвращается домой. Однако вскоре Дэниэл начинает замечать странности в поведении Лиз и приходит к выводу, что его жену подменили.\nИстория третья: Р. М. Ф. ест сэндвич. \nЭндрю и Эмили — последователи культа, завязанного на сексе, солёной воде и внутренней чистоте. По поручению своего гуру Оми парочка разыскивает девушку, способную воскрешать мёртвых, но поиски пока не увенчались успехом. Однажды в кафе к ним подходит незнакомка, которая утверждает, что её сестра — именно та, которую они ищут.",
+      "ratingAgeLimits": "age18"
+    },
+    {
+      "kinopoiskId": 5424447,
+      "imdbId": "tt23049322",
+      "nameRu": "Ларго Винч: Гнев прошлого",
+      "nameEn": null,
+      "nameOriginal": "Largo Winch: Le prix de l'argent",
+      "countries": [
+        {
+          "country": "Франция"
+        },
+        {
+          "country": "Бельгия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "детектив"
+        },
+        {
+          "genre": "приключения"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "ratingKinopoisk": 5.9,
+      "ratingImdb": 5,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/5424447.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/5424447.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "Во время семейного отпуска у красавца и миллиардера Ларго Винча похищают сына. Одновременно Ларго оказывается обвиненным в убийстве. Его объявляют в розыск международные спецслужбы. Бизнес-империя Ларго начинает рушиться. Только поняв, как связаны между собой эти разрозненные события и окунувшись в прошлое своей семьи, Ларго Винч сможет противостоять гневу загадочного и всемогущего противника и спасти сына.",
+      "ratingAgeLimits": "age16"
+    },
+    {
+      "kinopoiskId": 5102255,
+      "imdbId": "tt22022452",
+      "nameRu": "Головоломка 2",
+      "nameEn": null,
+      "nameOriginal": "Inside Out 2",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "фэнтези"
+        },
+        {
+          "genre": "комедия"
+        },
+        {
+          "genre": "мультфильм"
+        },
+        {
+          "genre": "семейный"
+        }
+      ],
+      "ratingKinopoisk": 7.9,
+      "ratingImdb": 7.8,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/5102255.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/5102255.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "Райли уже подросток, и штаб-квартира в её мозгу подвергается капитальному ремонту, чтобы дать место новым эмоциям. Радость, Грусть, Гнев, Страх и Отвращение никак не ожидали появления Тревожности, Зависти, Смущения и Скуки. Райли с двумя лучшими подругами отправляется в хоккейный лагерь, где у неё появляется шанс попасть в команду старшей школы, и Радость уверена, что лучше всех знает, что делать в данной ситуации. Так же считает и Тревожность.",
+      "ratingAgeLimits": null
+    },
+    {
+      "kinopoiskId": 4626783,
+      "imdbId": "tt15314262",
+      "nameRu": "Пчеловод",
+      "nameEn": null,
+      "nameOriginal": "The Beekeeper",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Великобритания"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "криминал"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "ratingKinopoisk": 6.5,
+      "ratingImdb": 6.4,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/4626783.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/4626783.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/2385704/2a0000019015ba4d793f3e8cdf8dd701cee9/orig",
+      "logoUrl": null,
+      "description": "Адам Клэй живет в тихом пригороде, занимается разведением пчёл и не распространяется о своей прошлой жизни. Он дружит с пожилой соседкой миссис Паркер, у которой арендует сарай. Однажды миссис Паркер становится жертвой кибермошенников, которые похищают деньги со всех её счетов. Не в силах вынести такой удар, женщина сводит счёты с жизнью. Осознав, что закон в данной ситуации бессилен, Адам решает применить все свои боевые навыки, чтобы вычислить преступников и отомстить.",
+      "ratingAgeLimits": "age18"
+    },
+    {
+      "kinopoiskId": 5102776,
+      "imdbId": null,
+      "nameRu": "Спермагеддон",
+      "nameEn": null,
+      "nameOriginal": "Spermageddon",
+      "countries": [
+        {
+          "country": "Норвегия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "комедия"
+        },
+        {
+          "genre": "мультфильм"
+        },
+        {
+          "genre": "мюзикл"
+        }
+      ],
+      "ratingKinopoisk": null,
+      "ratingImdb": null,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/5102776.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/5102776.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "Симен и Камелла — два сперматозоида в мошонке фаната «Звездных войн». Они живут спокойно, пока их хозяин не находит себе девушку. Так Симен и Камелла отправляются в опасное путешествие до яйцеклетки возлюбленной хозяина через спермициды и противозачаточные.",
+      "ratingAgeLimits": null
+    },
+    {
+      "kinopoiskId": 5237443,
+      "imdbId": "tt24871974",
+      "nameRu": "Меган: К вашим услугам",
+      "nameEn": null,
+      "nameOriginal": "Subservience",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Болгария"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "фантастика"
+        }
+      ],
+      "ratingKinopoisk": 5.8,
+      "ratingImdb": 4.4,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/5237443.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/5237443.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "Пока жена Ника находится в больнице в тяжелом состоянии, хранительницей очага становится высокотехнологичный робот Меган. Но, похоже, ее холодный и расчетливый искусственный интеллект не желает быть просто заменой. Меган пойдет на все, чтобы навсегда остаться частью этой семьи. Даже против их собственной воли.",
+      "ratingAgeLimits": "age18"
+    },
+    {
+      "kinopoiskId": 5599850,
+      "imdbId": null,
+      "nameRu": "Пункт назначения: Поезд № 13",
+      "nameEn": null,
+      "nameOriginal": "Kereta Berdarah",
+      "countries": [
+        {
+          "country": "Индонезия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "ужасы"
+        }
+      ],
+      "ratingKinopoisk": 4.7,
+      "ratingImdb": 4.8,
+      "year": 2024,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/5599850.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/5599850.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "Строительство железной дороги к новому курорту проходит через священный лес, из-за чего лесные демоны приходят в ярость и убивают нескольких рабочих. Некоторое время спустя первый туристический поезд торжественно отправляется по новому маршруту — состав из пяти вагонов должен проследовать через пять тоннелей. После первого тоннеля вагон № 5 загадочно исчезает.",
+      "ratingAgeLimits": "age18"
+    }
+  ]
+}
