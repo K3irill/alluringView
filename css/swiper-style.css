@@ -1,9 +1,12 @@
 .card-wrapper {
     margin: 0 60px 35px;
     padding: 20px 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .card-list .card-item {
+    max-width: 360px;
+    min-width: 360px;
+    height: 490px;
     perspective: 1000px;
     list-style: none;
     position: relative;
@@ -19,6 +22,9 @@
     opacity: 1;
 }
 .card-list .card-item .card-link {
+    max-width: 360px;
+    min-width: 360px;
+    height: 490px;
     user-select: none;
     display: block;
     background: #ffffff15;
@@ -38,6 +44,7 @@
 }
 .card-list .card-link .card-img {
     width: 100%;
+    height: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 10px;

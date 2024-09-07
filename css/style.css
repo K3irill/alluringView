@@ -548,4 +548,82 @@ body {
   z-index: 1000;
   background: url(/img/index/leaf-autumn-fall-svgrepo-com.svg);
   background-size: 100% 100%;
+}
+
+.module-movie {
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 20px;
+  border-radius: 15px;
+  color: white;
+  transition: 0.8s ease 0s;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.9920343137) 0%, rgba(86, 24, 89, 0.975227591) 39%, rgba(98, 0, 51, 0.9696253501) 65%, rgb(2, 0, 36) 100%);
+}
+.module-movie__btn-close {
+  position: absolute;
+  z-index: 1000;
+  top: 20px;
+  font-size: 50px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+}
+.module-movie__btn-close img {
+  width: 100%;
+}
+.module-movie__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.module-movie__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  margin: 0 40px;
+}
+.module-movie__title {
+  text-align: center;
+  font-size: 35px;
+}
+.module-movie__list {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.module-movie__link {
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  font-size: 24px;
+  margin-right: 20px;
+  transition: 0.3s ease 0s;
+}
+.module-movie__link-targ {
+  background-color: white;
+  color: #821176;
+}
+.module-movie__link-targ:hover {
+  transition: 0.3s ease 0s;
+  color: white;
+  background: transparent;
+}
+.module-movie__link-about:hover {
+  transition: 0.3s ease 0s;
+  background-color: white;
+  color: #821176;
+}
+.module-movie__img {
+  width: 20%;
+  padding: 20px;
+}
+
+.modal--show {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=style.css.map */

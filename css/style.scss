@@ -485,3 +485,103 @@ body {
     background: url(/img/index/leaf-autumn-fall-svgrepo-com.svg);
     background-size: 100% 100%;
 }
+
+.module-movie {
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 20px;
+    border-radius: 15px;
+    color: white;
+    transition: 0.8s ease 0s;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 0.9920343137254902) 0%,
+        rgba(86, 24, 89, 0.9752275910364145) 39%,
+        rgba(98, 0, 51, 0.969625350140056) 65%,
+        rgba(2, 0, 36, 1) 100%
+    );
+    &__btn-close {
+        position: absolute;
+        z-index: 1000;
+        top: 20px;
+        font-size: 50px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        & img{
+            width: 100%;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        margin: 0 40px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    &__about {
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    &__item {
+    }
+
+    &__description {
+    }
+    &__links {
+    }
+    &__link {
+        color: white;
+        padding: 10px 20px;
+        border: 2px solid #ffffff;
+        border-radius: 30px;
+        font-size: 24px;
+        margin-right: 20px;
+        transition: 0.3s ease 0s;
+    }
+    &__link-targ {
+        background-color: white;
+        color: #821176;
+        &:hover {
+            transition: 0.3s ease 0s;
+            color: white;
+            background: transparent;
+        }
+    }
+    &__link-about {
+        &:hover {
+            transition: 0.3s ease 0s;
+            background-color: white;
+            color: #821176;
+        }
+    }
+    &__img {
+        width: 20%;
+        padding: 20px;
+    }
+}
+.modal--show {
+    opacity: 1;
+    visibility: visible;
+}
