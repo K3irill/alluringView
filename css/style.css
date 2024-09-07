@@ -90,6 +90,7 @@ h6 {
 /*  */
 body {
   font-family: "Caveat";
+  background-color: #080808;
 }
 
 .wrapper {
@@ -558,8 +559,7 @@ body {
   border-radius: 15px;
   color: white;
   transition: 0.8s ease 0s;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgba(2, 0, 36, 0.9920343137) 0%, rgba(86, 24, 89, 0.975227591) 39%, rgba(98, 0, 51, 0.9696253501) 65%, rgb(2, 0, 36) 100%);
+  background: linear-gradient(to right, #1b1b1b 0%, rgb(6, 6, 6) 100%);
 }
 .module-movie__btn-close {
   position: absolute;
@@ -570,6 +570,11 @@ body {
   width: 30px;
   height: 30px;
   background: transparent;
+  transition: 0.3s ease 0s;
+}
+.module-movie__btn-close:hover {
+  transition: 0.3s ease 0s;
+  filter: drop-shadow(0px 0px 15px rgb(255, 255, 255));
 }
 .module-movie__btn-close img {
   width: 100%;
@@ -578,13 +583,20 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 600px;
+  box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.272);
+  border-radius: 15px;
 }
 .module-movie__body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 300px;
+  width: 400px;
   margin: 0 40px;
+  padding: 80px 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.067);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.272);
 }
 .module-movie__title {
   text-align: center;
@@ -593,7 +605,16 @@ body {
 .module-movie__list {
   display: flex;
   justify-content: space-around;
+  text-wrap: nowrap;
   padding: 10px;
+}
+.module-movie__item {
+  padding: 5px;
+}
+.module-movie__links {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
 }
 .module-movie__link {
   color: white;
@@ -601,22 +622,20 @@ body {
   border: 2px solid #ffffff;
   border-radius: 30px;
   font-size: 24px;
-  margin-right: 20px;
   transition: 0.3s ease 0s;
 }
 .module-movie__link-targ {
   background-color: white;
-  color: #821176;
+  color: #1b1b1b;
 }
 .module-movie__link-targ:hover {
   transition: 0.3s ease 0s;
-  color: white;
-  background: transparent;
+  box-shadow: inset 0px 0px 5px rgb(0, 0, 0);
 }
 .module-movie__link-about:hover {
   transition: 0.3s ease 0s;
   background-color: white;
-  color: #821176;
+  color: #1b1b1b;
 }
 .module-movie__img {
   width: 20%;

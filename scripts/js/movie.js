@@ -62,14 +62,14 @@ class Movie {
                       <div class="module-movie__about">
                         <ul class="module-movie__list">
                           <li class="module-movie__item">${resData.items[0].year}</li>
-                          <li class="module-movie__item"></li>
+                          <li class="module-movie__item">${resData.items[0].genres.map(genre => ` ${genre.genre}`)}</li>
                           <li class="module-movie__item">${resData.items[0].ratingKinopoisk}</li>
                         </ul>
                       </div>
                       <div class="module-movie__description">${resData.items[0].description}</div>
         
                     </div>
-                    <div class="module__links">
+                    <div class="module-movie__links">
                       <a href="#  " class="module-movie__link module-movie__link-targ">Перейти</a>
                       <a href="#" class="module-movie__link module-movie__link-about">Подробнее</a>
                     </div>
