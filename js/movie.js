@@ -1,22 +1,17 @@
-
 class Movie {
   constructor() {
     this.initElements();
     this.getMovies(this.API_URL_POPULAR);
   }
   initElements() {
-    this.API_KEY = "53cec016-7743-4165-8e20-537b2cb7130c";
+    // this.API_KEY = "a5307cec";
     this.API_URL_POPULAR =
-      "https://kinopoiskapiunofficial.tech/api/v2.2/films/collections?type=KIDS_ANIMATION_THEME&page=1";
+      `http://127.0.0.1:5000/movies?theme=top-20`;
     this.cardlist = document.querySelector("#For-Kids");
   }
 
   async getMovies(url) {
     const resp = await fetch(url, {
-      headers: {
-        "Content-Type": "application/json",
-        "X-API-KEY": this.API_KEY,
-      },
     });
     const respData = await resp.json();
 
@@ -32,7 +27,7 @@ class Movie {
                       <a href="#" class="card-link">
                         <img
                           src="${item.posterUrlPreview}"
-                          alt="${item.nameRu}"
+                          alt=""
                           class="card-img"
                         />
                         <p class="card-text collection-better_film-name">
@@ -41,16 +36,15 @@ class Movie {
                       </a>
             `;
       this.cardlist.appendChild(this.cardEl);
-
-      
     });
   }
 }
 
 const start = new Movie();
 
-class Family extends Movie{
-    constructor(){
-        super('initElements()')
-    }
+class Family extends Movie {
+  constructor() {
+    super("initElements()");
+  }
 }
+
