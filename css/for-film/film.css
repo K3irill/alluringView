@@ -357,6 +357,9 @@ body {
   background-color: rgba(255, 255, 255, 0.2196078431);
 }
 
+.frames-container {
+  overflow: hidden;
+}
 .frames-container__list {
   margin-top: 50px;
   display: flex;
@@ -368,11 +371,29 @@ body {
 .frames-container__photo-list {
   margin-top: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  transition: transform 0.5s ease;
+}
+.frames-container__photo-container {
+  position: relative;
+  overflow: hidden;
+}
+.frames-container__btn {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 3%;
+  background-color: rgba(0, 0, 0, 0.4745098039);
+  color: white;
+  z-index: 1000;
+}
+.frames-container__btn-next {
+  right: 0;
 }
 .frames-container__photo-item {
-  width: 280px;
+  min-width: 280px;
   height: 180px;
+  margin-right: 20px;
 }
 .frames-container__photo-item img {
   width: 100%;
