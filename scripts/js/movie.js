@@ -70,8 +70,8 @@ class Movie {
         
                     </div>
                     <div class="module-movie__links">
-                      <a href="#  " class="module-movie__link module-movie__link-targ">Перейти</a>
-                      <a href="#" class="module-movie__link module-movie__link-about">Подробнее</a>
+                      <a href="film.html" class="module-movie__link module-movie__link-targ">Перейти</a>
+                      <a href="film.html" class="module-movie__link module-movie__link-about">Подробнее</a>
                     </div>
                     <img class="module-movie__img" src="${resData.items[0].posterUrl}" alt="">
           `;
