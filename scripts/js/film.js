@@ -87,6 +87,7 @@ async function generatePage() {
         <h1 class='page-error__title'>Ошибка^-^</h1>
         <p class='page-error__text'>Страница на которую вы попали, <span>не существует.</span></p>
         <ul class='page-error__list'>
+         <li class='page-error__item'>Попробуйте:</li>
         <li class='page-error__item'><a href='index.html' class='page-error__link'>-Перейти к главной странице сайта-</a></li>
         <li class='page-error__item'>Проверить правильность введеного адреса</li>
         <li class='page-error__item'>Пойти попить чаю</li>

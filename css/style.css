@@ -267,7 +267,7 @@ body {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   overflow: hidden;
-  margin-bottom: -90px;
+  margin-bottom: -240px;
 }
 .bigBanner:hover .bigBanner_ibg {
   transition: 1s;
@@ -301,6 +301,7 @@ body {
   padding: 15px 30px;
   font-size: 16px;
   transition: 0.5s;
+  cursor: pointer;
 }
 .bigBanner_btn:hover {
   transition: 0.5s;
