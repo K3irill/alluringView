@@ -284,6 +284,8 @@ body {
   perspective: 1000px;
 }
 .film-main-block__poster-container {
+  width: 400px;
+  height: 600px;
   transition: transform 1s;
   transform-style: preserve-3d;
   cursor: pointer;
@@ -408,4 +410,49 @@ body {
 .frames-container__photo-item img {
   width: 100%;
   height: 100%;
+}
+.page-error {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+}
+.page-error__text, .page-error__title, .page-error__list {
+  z-index: 1;
+}
+.page-error__title {
+  font-size: 66px;
+  line-height: 60px;
+  color: rgba(255, 0, 0, 0.8078431373);
+  text-shadow: 0px 0px 20px red;
+}
+.page-error__text {
+  font-size: 32px;
+  line-height: 60px;
+}
+.page-error__text span {
+  color: rgba(255, 0, 0, 0.8078431373);
+  text-shadow: 0px 0px 20px red;
+}
+.page-error__list {
+  font-size: 30px;
+  line-height: 40px;
+}
+.page-error__link {
+  text-shadow: 0px 0px 20px rgb(145, 10, 73);
+  color: rgb(145, 10, 73);
+}
+.page-error__link:hover {
+  opacity: 0.8;
+}
+.page-error__img {
+  position: absolute;
+  opacity: 0.1;
+  filter: blur(5px);
 }/*# sourceMappingURL=film.css.map */

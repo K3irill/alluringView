@@ -82,8 +82,15 @@ async function generatePage() {
 
     const filmBlock = document.querySelector(".film");
     filmBlock.innerHTML = `
-      <div class="film__main-block film-main-block">
-        <p>Ошибка загрузки данных. Пожалуйста, попробуйте позже.</p>
+      <div class="page-error">
+      <img class='page-error__img' src='https://i.pinimg.com/736x/5e/b8/e8/5eb8e80d46d4a44871627f46ccb07578.jpg' />
+        <h1 class='page-error__title'>Ошибка^-^</h1>
+        <p class='page-error__text'>Страница на которую вы попали, <span>не существует.</span></p>
+        <ul class='page-error__list'>
+        <li class='page-error__item'><a href='index.html' class='page-error__link'>-Перейти к главной странице сайта-</a></li>
+        <li class='page-error__item'>Проверить правильность введеного адреса</li>
+        <li class='page-error__item'>Пойти попить чаю</li>
+        </ul>
       </div>
     `;
   }
