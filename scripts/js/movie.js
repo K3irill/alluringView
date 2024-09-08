@@ -58,22 +58,34 @@ class Movie {
                     <button class="module-movie__btn-close modal-close"><img src='/img/index/close-tab-svgrepo-com.svg'></img></button>
                     
                     <div class="module-movie__body">
-                      <h2 class="module-movie__title">${resData.items[0].nameRu}</h2>
+                      <h2 class="module-movie__title">${
+                        resData.items[0].nameRu
+                      }</h2>
                       <div class="module-movie__about">
                         <ul class="module-movie__list">
-                          <li class="module-movie__item">${resData.items[0].year}</li>
-                          <li class="module-movie__item">${resData.items[0].genres.map(genre => ` ${genre.genre}`)}</li>
-                          <li class="module-movie__item">${resData.items[0].ratingKinopoisk}</li>
+                          <li class="module-movie__item">${
+                            resData.items[0].year
+                          }</li>
+                          <li class="module-movie__item">${resData.items[0].genres.map(
+                            (genre) => ` ${genre.genre}`
+                          )}</li>
+                          <li class="module-movie__item">${
+                            resData.items[0].ratingKinopoisk
+                          }</li>
                         </ul>
                       </div>
-                      <div class="module-movie__description">${resData.items[0].description}</div>
+                      <div class="module-movie__description">${
+                        resData.items[0].description
+                      }</div>
         
                     </div>
                     <div class="module-movie__links">
-                      <a href="film.html" class="module-movie__link module-movie__link-targ">Перейти</a>
+                      <a id='film-link-rq' href="film.html" class="module-movie__link module-movie__link-targ">Перейти</a>
                       <a href="film.html" class="module-movie__link module-movie__link-about">Подробнее</a>
                     </div>
-                    <img class="module-movie__img" src="${resData.items[0].posterUrl}" alt="">
+                    <img class="module-movie__img" src="${
+                      resData.items[0].posterUrl
+                    }" alt="">
           `;
       this.moduleBlock.innerHTML = ""; // Очищаем предыдущее содержимое модального окна
       this.moduleBlock.appendChild(moduleEl); // Вставляем новое содержимое
@@ -82,6 +94,16 @@ class Movie {
         this.moduleBlock.classList.remove("modal--show");
         this.moduleBlock.innerHTML = "";
       });
+
+      const filmLink = document.getElementById("film-link-rq");
+
+      filmLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        let transferedFilmId = resData.items[0].imdbId;
+        const newUrl = `film.html?filmId=${transferedFilmId}`;
+        window.location.href = newUrl;
+      });
+
     } catch (error) {
       alert("Upssssss:", error);
     }
