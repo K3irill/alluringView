@@ -1,7 +1,7 @@
 const cardContainer = document.querySelector('.film-main-block__poster-wrap');
 const card = document.querySelector('.film-main-block__poster-container');
 
-cardContainer.addEventListener('mousemove', (e) => {
+cardContainer.addEventListener('mousemove', (e) => {  
     const cardWidth = cardContainer.offsetWidth;
     const cardHeight = cardContainer.offsetHeight;
 
@@ -15,7 +15,7 @@ cardContainer.addEventListener('mousemove', (e) => {
     const rotateX = -(mouseY / (cardHeight / 2)) * 10; // Угол по оси X
     const rotateY = (mouseX / (cardWidth / 2)) * 10;  // Угол по оси Y
 
-    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(0.95)`;
+    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(0.95)`;  
 });
 
 cardContainer.addEventListener('mouseleave', () => {
