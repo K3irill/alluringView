@@ -1,6 +1,6 @@
 {
   "theme": "popular-movie",
-  "total": 20,
+  "total": 22,
   "totalPages": 1,
   "items": [
     {
@@ -482,7 +482,7 @@
     },
     {
       "kinopoiskId": 5118763,
-      "imdbId": null,
+      "imdbId": "tt22408160",
       "nameRu": "Виды доброты",
       "nameEn": null,
       "nameOriginal": "Kinds of Kindness",
@@ -629,7 +629,7 @@
     },
     {
       "kinopoiskId": 5102776,
-      "imdbId": null,
+      "imdbId": "tt14828040",
       "nameRu": "Спермагеддон",
       "nameEn": null,
       "nameOriginal": "Spermageddon",
@@ -695,7 +695,7 @@
     },
     {
       "kinopoiskId": 5599850,
-      "imdbId": null,
+      "imdbId": "tt29545351",
       "nameRu": "Пункт назначения: Поезд № 13",
       "nameEn": null,
       "nameOriginal": "Kereta Berdarah",
@@ -719,6 +719,110 @@
       "logoUrl": null,
       "description": "Строительство железной дороги к новому курорту проходит через священный лес, из-за чего лесные демоны приходят в ярость и убивают нескольких рабочих. Некоторое время спустя первый туристический поезд торжественно отправляется по новому маршруту — состав из пяти вагонов должен проследовать через пять тоннелей. После первого тоннеля вагон № 5 загадочно исчезает.",
       "ratingAgeLimits": "age18"
+    },
+    {
+      "kinopoiskId": "840821",
+      "imdbId": "tt0448694",
+      "nameRu": "Кот в сапогах 2: Последнее желание",
+      "nameEn":"Puss in Boots: The Last Wish",
+      "nameOriginal": "Puss in Boots: The Last Wish",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Япония"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "мультфильм"
+        },
+        {
+          "genre": "комедия"
+        },
+        {
+          "genre": "приключения"
+        }
+      ],
+      "ratingKinopoisk": 8.4,
+      "ratingImdb": 8.7,
+      "year": 2022,
+      "type": "FILM",
+      "posterUrl": "https://www.kinopoisk.ru/picture/3981268/",
+      "posterUrlPreview": "https://www.kinopoisk.ru/picture/3981270/",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "Промотав восемь жизней из девяти и до смерти испугавшись пришедшего за ним волка-охотника за головами, Кот в сапогах внимает совету врача и заселяется в дом местной кошатницы. Там он смиряется с установленными порядками, отращивает бороду и теряет тягу к подвигам и приключениям, но только до тех пор, пока не узнаёт о волшебной карте, которая указывает путь к где-то упавшей Звезде желаний. Кот в сапогах твёрдо решает отыскать Звезду, чтобы вернуть свои жизни, и в компании притворявшегося кошачьим пёсика отправляется красть карту у известного коллекционера волшебных предметов Джека Хорнера.",
+      "ratingAgeLimits": "age12",
+      "frames": [
+        {
+          "frameUrl": "https://www.kinopoisk.ru/picture/4001245/"
+        },
+        {
+          "frameUrl": "https://www.kinopoisk.ru/picture/4001244/"
+        },
+        {
+          "frameUrl": "https://www.kinopoisk.ru/picture/3810665/"
+        },
+        {
+          "frameUrl": "https://www.kinopoisk.ru/picture/3810664/"
+        },
+        {
+          "frameUrl": "https://www.kinopoisk.ru/picture/3810663/"
+        }
+      ]
+    },
+    {
+      "kinopoiskId": "1219177",
+      "imdbId": "tt9362722",
+      "nameRu": "Человек-паук: Паутина вселенных",
+      "nameEn":"Spider-Man: Across the Spider-Verse",
+      "nameOriginal": "Spider-Man: Across the Spider-Verse",
+      "countries": [
+        {
+          "country": "США"
+        }
+       
+      ],
+      "genres": [
+        {
+          "genre": "мультфильм"
+        },
+        {
+          "genre": "фантастика"
+        },
+        {
+          "genre": "приключения"
+        }
+      ],
+      "ratingKinopoisk": 8.5,
+      "ratingImdb": 8.9,
+      "year": 2023,
+      "type": "FILM",
+      "posterUrl": "https://www.kinopoisk.ru/picture/3879367/",
+      "posterUrlPreview": "https://www.kinopoisk.ru/picture/3810339/",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "После воссоединения с Гвен Стейси дружелюбный сосед Человек-Паук попадает из Бруклина в Мультивселенную, где встречает команду Паучков, защищающих само её существование. Пытаясь справиться с новой угрозой, Майлз сталкивается с Пауками из других вселенных. Настаёт момент, когда ему необходимо решить, что значит быть героем, спасающим тех, кого любишь больше всего.",
+      "ratingAgeLimits": "age12",
+      "frames": [
+        {
+          "frameUrl": "https://www.kinopoisk.ru/picture/3931449/"
+        },
+        {
+          "frameUrl": "https://www.kinopoisk.ru/picture/3931448/"
+        },
+        {
+          "frameUrl": "https://www.kinopoisk.ru/picture/3852811/"
+        },
+        {
+          "frameUrl": "https://www.kinopoisk.ru/picture/3852810/"
+        },
+        {
+          "frameUrl": "https://www.kinopoisk.ru/picture/3852809/"
+        }
+      ]
     }
   ]
 }
