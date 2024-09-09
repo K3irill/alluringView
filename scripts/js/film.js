@@ -1,9 +1,10 @@
 import { carousel } from "./carousel.js";
+import { API_KEY_KP } from "./keys.js";
 import { posterAnimation } from "./posterAnimation.js";
 
 function getFilmIdFromUrl() {
   const params = new URLSearchParams(window.location.search);
-  return params.get("filmId"); 
+  return params.get("filmId");
 }
 
 const filmId = getFilmIdFromUrl();
@@ -14,9 +15,11 @@ if (filmId) {
 
 async function generatePage() {
   try {
-    const response = await fetch(`http://127.0.0.1:5000/movies?imdbId=${filmId}`);
+    const response = await fetch(
+      `http://127.0.0.1:5000/movies?imdbId=${filmId}`
+    );
     if (!response.ok) {
-      throw new Error('Network response was not ok');
+      throw new Error("Network response was not ok");
     }
     const responseData = await response.json();
     const shortResp = responseData.items[0];
@@ -30,28 +33,52 @@ async function generatePage() {
       <div class="film__main-block film-main-block">
         <div class="film-main-block__poster-wrap">
           <div class="film-main-block__poster-container">
-            <img src="${sanitizeUrl(shortResp.posterUrl)}" alt="Poster" class="film-main-block__poster" />
+            <img src="${sanitizeUrl(
+              shortResp.posterUrl
+            )}" alt="Poster" class="film-main-block__poster" />
           </div>
           <button class="film-main-block__btn-favorite">В Избранное</button>
         </div>
         <div class="film-main-block__main-info fmb-main-info">
           <a href="/pages/index.html" class="btn-back">Назад</a>
-          <h2 class="film-main-block__title">${sanitizeText(shortResp.nameRu)}</h2>
-          <h2 class="film-main-block__subtitle">${sanitizeText(shortResp.nameOriginal)}</h2>
-          <p class="film-main-block__genres">${sanitizeText(shortResp.genres.map(genre => genre.genre).join(', '))}</p>
+          <h2 class="film-main-block__title">${sanitizeText(
+            shortResp.nameRu
+          )}</h2>
+          <h2 class="film-main-block__subtitle">${sanitizeText(
+            shortResp.nameOriginal
+          )}</h2>
+          <p class="film-main-block__genres">${sanitizeText(
+            shortResp.genres.map((genre) => genre.genre).join(", ")
+          )}</p>
           <div class="fmb-main-info__info">
             <ul class="fmb-main-info__list">
-              <li class="fmb-main-info__item">Рейтинг RU: <span>${sanitizeText(shortResp.ratingKinopoisk)}</span></li>
-              <li class="fmb-main-info__item">Рейтинг EN: <span>${sanitizeText(shortResp.ratingImdb)}</span></li>
-              <li class="fmb-main-info__item">Год: <span>${sanitizeText(shortResp.year)}</span></li>
-              <li class="fmb-main-info__item">Страна: <span>${sanitizeText(shortResp.countries.map(country => country.country).join(', '))}</span></li>
-              <li class="fmb-main-info__item">Возраст от: <span>${sanitizeText(shortResp.ratingAgeLimits ? shortResp.ratingAgeLimits.replace(/\D/g, '') : '')}</span></li>
-              <li class="fmb-main-info__item">Тип: <span>${sanitizeText(shortResp.type)}</span></li>
+              <li class="fmb-main-info__item">Рейтинг RU: <span>${sanitizeText(
+                shortResp.ratingKinopoisk
+              )}</span></li>
+              <li class="fmb-main-info__item">Рейтинг EN: <span>${sanitizeText(
+                shortResp.ratingImdb
+              )}</span></li>
+              <li class="fmb-main-info__item">Год: <span>${sanitizeText(
+                shortResp.year
+              )}</span></li>
+              <li class="fmb-main-info__item">Страна: <span>${sanitizeText(
+                shortResp.countries.map((country) => country.country).join(", ")
+              )}</span></li>
+              <li class="fmb-main-info__item">Возраст от: <span>${sanitizeText(
+                shortResp.ratingAgeLimits
+                  ? shortResp.ratingAgeLimits.replace(/\D/g, "")
+                  : ""
+              )}</span></li>
+              <li class="fmb-main-info__item">Тип: <span>${sanitizeText(
+                shortResp.type
+              )}</span></li>
             </ul>
           </div>
           <div class="film-main-block__descriptipn-block descriptipn-block">
             <h2 class="descriptipn-block__title">Description</h2>
-            <p class="descriptipn-block__text">${sanitizeText(shortResp.description)}</p>
+            <p class="descriptipn-block__text">${sanitizeText(
+              shortResp.description
+            )}</p>
           </div>
         </div>
       </div>
@@ -76,7 +103,50 @@ async function generatePage() {
     filmBlock.appendChild(filmContainer);
 
     posterAnimation();
-    carousel();
+
+    const kinopoiskId = responseData.items[0].kinopoiskId;
+    console.log(kinopoiskId);
+
+    async function getPhotos(id) {
+      const res = await fetch(
+        "https://kinopoiskapiunofficial.tech/api/v2.2/films/" + id + "/images",
+        {
+          method: "GET",
+          headers: {
+            "X-API-KEY": API_KEY_KP,
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      const resData = await res.json();
+      console.log(resData);
+      pastePhotoList();
+
+      function pastePhotoList() {
+        const photoList = document.querySelector(
+          ".frames-container__photo-list"
+        );
+        photoList.innerHTML = "";
+        console.log(photoList);
+
+        function li() {
+          let i = 0;
+          while (i < resData.total) {
+            const photoListElement = document.createElement("li");
+            photoListElement.classList.add("frames-container__photo-item");
+            photoListElement.innerHTML = `
+                        <img src="${resData.items[i].imageUrl}" alt="">
+                        `;
+            photoList.appendChild(photoListElement);
+            i++;
+          }
+        }
+        li();
+        carousel();
+      }
+    }
+
+    getPhotos(kinopoiskId);
   } catch (error) {
     console.error("Error generating page:", error);
 
@@ -100,9 +170,9 @@ async function generatePage() {
 generatePage();
 
 function sanitizeText(text) {
-  return text ? text : 'n/n';
+  return text ? text : "n/n";
 }
 
 function sanitizeUrl(url) {
-  return url ? url : 'default-poster.jpg';
+  return url ? url : "default-poster.jpg";
 }

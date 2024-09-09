@@ -39,7 +39,7 @@
     cursor: grabbing;
 }
 .card-item:hover .card-link {
-    transform:scale(0.9) rotateY(-25deg) rotateX(30deg);
+    transform:scale(0.9) rotateY(-10deg) rotateX(10deg);
  
 }
 .card-list .card-link .card-img {
