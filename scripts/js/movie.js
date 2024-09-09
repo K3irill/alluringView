@@ -87,8 +87,8 @@ class Movie {
                       resData.items[0].posterUrl
                     }" alt="">
           `;
-      this.moduleBlock.innerHTML = ""; // Очищаем предыдущее содержимое модального окна
-      this.moduleBlock.appendChild(moduleEl); // Вставляем новое содержимое
+      this.moduleBlock.innerHTML = ""; 
+      this.moduleBlock.appendChild(moduleEl); 
       const closeModalBtn = this.moduleBlock.querySelector(".modal-close");
       closeModalBtn.addEventListener("click", () => {
         this.moduleBlock.classList.remove("modal--show");
