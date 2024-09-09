@@ -5,6 +5,7 @@ import { posterAnimation } from "./posterAnimation.js";
 function getFilmIdFromUrl() {
   const params = new URLSearchParams(window.location.search);
   return params.get("filmId");
+  return params.get("filmId");
 }
 
 const filmId = getFilmIdFromUrl();
@@ -20,6 +21,7 @@ async function generatePage() {
     );
     if (!response.ok) {
       throw new Error("Network response was not ok");
+      throw new Error("Network response was not ok");
     }
     const responseData = await response.json();
     console.log(responseData);
@@ -33,6 +35,9 @@ async function generatePage() {
       <div class="film__main-block film-main-block">
         <div class="film-main-block__poster-wrap">
           <div class="film-main-block__poster-container">
+            <img src="${sanitizeUrl(
+              shortResp.posterUrl
+            )}" alt="Poster" class="film-main-block__poster" />
             <img src="${sanitizeUrl(
               shortResp.posterUrl
             )}" alt="Poster" class="film-main-block__poster" />
@@ -85,6 +90,9 @@ async function generatePage() {
         </div>
           <div class="film-main-block__descriptipn-block descriptipn-block">
             <h2 class="descriptipn-block__title">Description</h2>
+            <p class="descriptipn-block__text">${sanitizeText(
+              shortResp.description
+            )}</p>
             <p class="descriptipn-block__text">${sanitizeText(
               shortResp.description
             )}</p>
@@ -214,8 +222,10 @@ generatePage();
 
 function sanitizeText(text) {
   return text ? text : "n/n";
+  return text ? text : "n/n";
 }
 
 function sanitizeUrl(url) {
+  return url ? url : "default-poster.jpg";
   return url ? url : "default-poster.jpg";
 }
