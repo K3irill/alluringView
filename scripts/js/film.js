@@ -1,6 +1,12 @@
 import { carousel } from "./carousel.js";
+import { carouselVideo } from "./carousel.js";
 import { API_KEYS_KP } from "./keys.js";
 import { posterAnimation } from "./posterAnimation.js";
+var tag = document.createElement("script");
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 function getFilmIdFromUrl() {
   const params = new URLSearchParams(window.location.search);
@@ -20,7 +26,6 @@ async function generatePage() {
     );
     if (!response.ok) {
       throw new Error("Network response was not ok");
-
     }
     const responseData = await response.json();
     console.log(responseData);
@@ -82,7 +87,9 @@ async function generatePage() {
         
         </div>
         <div class='fmb-main-info__links'>
-        <a href="https://w140.zona.plus/search/${shortResp.nameOriginal.trim()}/" class='film-main-block__btn-favorite fmb-main-info__link'>Где посмотреть бесплатно</a>
+        <a href="https://w140.zona.plus/search/${
+          shortResp.nameRu
+        }/" class='film-main-block__btn-favorite fmb-main-info__link'>Где посмотреть бесплатно</a>
         </div>
           <div class="film-main-block__descriptipn-block descriptipn-block">
             <h2 class="descriptipn-block__title">Description</h2>
@@ -99,16 +106,37 @@ async function generatePage() {
           <li class="frames-container__item">Видео</li>
         </ul>
         <hr class="hr-frames">
-        <div class="frames-container__photo-container">
-          <button class="frames-container__btn frames-container__btn-back"><</button>
-          <ul class="frames-container__photo-list">
-            <li class="frames-container__photo-item"><img src="..." alt=""></li>
+        <div id='photo-container' class="frames-container__photo-container">
+          <button id='ph-btn-back' class="frames-container__btn frames-container__btn-back"><</button>
+          <ul class="frames-container__photo-list frames-container__picture-list">
+            <li id='photo-item' class="frames-container__photo-item photo-item"><img src="..." alt=""></li>
           </ul>
-          <button class="frames-container__btn frames-container__btn-next">></button>
+          <button id='ph-btn-next' class="frames-container__btn frames-container__btn-next">></button>
+        </div>
+         <div id='video-container' class="frames-container__photo-container frames-container__video-container hidden">
+          <button id='vd-btn-back' class="frames-container__btn frames-container__btn-back"><</button>
+          <ul class="frames-container__photo-list frames-container__video-list">
+            <li class="frames-container__photo-item frames-container__vido-item"><video><source src='' /></video></li>
+          </ul>
+          <button id='vd-btn-next' class="frames-container__btn frames-container__btn-next">></button>
         </div>
         <ul class="frames-container__video-list"></ul>
       </div>
     `;
+
+    function visible() {
+      const container = document.querySelector(".frames-container__list");
+      const picturesConts = document.querySelector("#photo-container");
+      const videoConts = document.querySelector("#video-container");
+
+      container.addEventListener("click", (event) => {
+        if (event.target.classList.contains("frames-container__item")) {
+          const isPhoto = event.target.textContent === "Фото";
+          videoConts.classList.toggle("hidden", isPhoto);
+          picturesConts.classList.toggle("hidden", !isPhoto);
+        }
+      });
+    }
 
     filmBlock.innerHTML = "";
     filmBlock.appendChild(filmContainer);
@@ -118,12 +146,13 @@ async function generatePage() {
     const kinopoiskId = responseData.items[0].kinopoiskId;
 
     let currentKeyIndex = 0;
+    console.log(currentKeyIndex);
 
     async function getPhotos(id) {
       let success = false;
 
       while (!success && currentKeyIndex < API_KEYS_KP.length) {
-        const res = await fetch(
+        const resPhoto = await fetch(
           `https://kinopoiskapiunofficial.tech/api/v2.2/films/${id}/images`,
           {
             method: "GET",
@@ -133,27 +162,42 @@ async function generatePage() {
             },
           }
         );
+        const resVideo = await fetch(
+          `https://kinopoiskapiunofficial.tech/api/v2.2/films/${id}/videos`,
+          {
+            method: "GET",
+            headers: {
+              "X-API-KEY": API_KEYS_KP[currentKeyIndex],
+              "Content-Type": "application/json",
+            },
+          }
+        );
 
-        if (res.status === 429) {
+        if (resPhoto.status === 402) {
           console.log(
-            `API key limit reached for key ${API_KEY_KP[currentKeyIndex]}. Switching to next key...`
+            `API key limit reached for key ${API_KEYS_KP[currentKeyIndex]}. Switching to next key...`
           );
           currentKeyIndex++;
-        } else if (res.ok) {
-          const resData = await res.json();
-
+          console.log(currentKeyIndex);
+        } else if (resPhoto.ok) {
+          const resDataPh = await resPhoto.json();
+          const resDataVd = await resVideo.json();
           pastePhotoList();
           success = true;
           function pastePhotoList() {
             const photoList = document.querySelector(
-              ".frames-container__photo-list"
+              ".frames-container__picture-list"
+            );
+            const videoList = document.querySelector(
+              ".frames-container__video-list"
             );
             photoList.innerHTML = "";
+            videoList.innerHTML = "";
 
-            function li() {
+            function liPhoto() {
               let i = 0;
               do {
-                if (resData.items.length == 0) {
+                if (resDataPh.items.length == 0) {
                   const photoListElement = document.createElement("li");
                   photoListElement.classList.add(
                     "frames-container__photo-item"
@@ -165,18 +209,55 @@ async function generatePage() {
                 } else {
                   const photoListElement = document.createElement("li");
                   photoListElement.classList.add(
-                    "frames-container__photo-item"
+                    "frames-container__photo-item", 'photo-item'
                   );
                   photoListElement.innerHTML = `
-                              <img src="${resData.items[i].imageUrl}" alt="">
+                              <img src="${resDataPh.items[i].imageUrl}" alt="">
                               `;
                   photoList.appendChild(photoListElement);
                   i++;
                 }
-              } while (i < resData.items.length);
+              } while (i < resDataPh.items.length);
             }
-            li();
+            function liVideo() {
+              let i = 0;
+                
+              do {
+                if (resDataVd.items.length == 0) {
+                  const videoListElement = document.createElement("li");
+                  videoListElement.classList.add(
+                    "frames-container__photo-item"
+                  );
+                  videoListElement.innerHTML = `
+        <img src="https://cdn1.ozone.ru/s3/multimedia-y/c600/6649831114.jpg" alt="">
+      `;
+                  videoList.appendChild(videoListElement);
+                } else {
+                  const videoListElement = document.createElement("li");
+                  videoListElement.classList.add(
+                     'frames-container__vido-item'
+                  );
+
+                  
+                  const videoId = resDataVd.items[i].url.trim().split("v=")[1];
+                  const embedUrl = `https://www.youtube.com/embed/${videoId ? videoId : 0}`;
+                  videoListElement.innerHTML = `
+                    <iframe width="100%" height="100%" src="${embedUrl}" 
+                      title="YouTube video player" frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>`;
+                  videoList.appendChild(videoListElement);
+
+                  i++;
+                }
+              } while (i < resDataVd.items.length);
+            }
+            liPhoto();
+            liVideo();
             carousel();
+            carouselVideo()
+            visible();
           }
         } else {
           console.error(`Error fetching data: ${res.status} ${res.statusText}`);
