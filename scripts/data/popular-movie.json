@@ -721,7 +721,7 @@
       "ratingAgeLimits": "age18"
     },
     {
-      "kinopoiskId": "840821",
+      "kinopoiskId": 840821,
       "imdbId": "tt0448694",
       "nameRu": "Кот в сапогах 2: Последнее желание",
       "nameEn":"Puss in Boots: The Last Wish",
@@ -774,7 +774,7 @@
       ]
     },
     {
-      "kinopoiskId": "1219177",
+      "kinopoiskId": 1219177,
       "imdbId": "tt9362722",
       "nameRu": "Человек-паук: Паутина вселенных",
       "nameEn":"Spider-Man: Across the Spider-Verse",

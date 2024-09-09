@@ -35,8 +35,8 @@ class Movie {
 
       cardEl.addEventListener("click", (e) => {
         e.preventDefault();
-        this.openModule(item.imdbId);
-        console.log(item.imdbId);
+        this.openModule(item.kinopoiskId);
+        console.log(item.kinopoiskId);
       });
       this.cardlist.appendChild(cardEl);
     });
@@ -46,7 +46,7 @@ class Movie {
 
   async openModule(id) {
     try {
-      const res = await fetch("http://127.0.0.1:5000/movies?imdbId=" + id);
+      const res = await fetch("http://127.0.0.1:5000/movies?kinopoiskId=" + id);
       const resData = await res.json();
       console.log();
 
@@ -99,7 +99,7 @@ class Movie {
 
       filmLink.addEventListener("click", (e) => {
         e.preventDefault();
-        let transferedFilmId = resData.items[0].imdbId;
+        let transferedFilmId = resData.items[0].kinopoiskId;
         const newUrl = `film.html?filmId=${transferedFilmId}`;
         window.location.href = newUrl;
       });

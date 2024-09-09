@@ -263,7 +263,7 @@ body {
 }
 
 .film {
-  margin-top: 200px;
+  margin-top: 250px;
   min-width: 100%;
 }
 .film__main-block {
@@ -273,6 +273,15 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+.fmb-main-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fmb-main-info-container {
+  max-width: 200px;
 }
 
 .film-main-block {
@@ -305,6 +314,8 @@ body {
   margin-bottom: 20px;
 }
 .film-main-block__btn-favorite {
+  text-transform: uppercase;
+  text-align: center;
   margin-top: 10px;
   padding: 10px;
   border-radius: 20px;
@@ -338,7 +349,20 @@ body {
 .fmb-main-info__item span {
   margin-left: 10px;
 }
+.fmb-main-info__links {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -120px;
+}
+.fmb-main-info__link {
+  background-color: #de8f1a;
+  box-shadow: inset 0px 0px 5px #000000;
+}
 
+.descriptipn-block {
+  margin-top: -60px;
+}
 .descriptipn-block__title {
   text-align: center;
   margin-bottom: 10px;

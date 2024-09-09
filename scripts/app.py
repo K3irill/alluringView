@@ -30,6 +30,7 @@ def get_movies():
     country = request.args.get('country')
     year = request.args.get('year')
     imdbId = request.args.get('imdbId')
+    kinopoiskId = request.args.get('kinopoiskId')
     
     movies = load_movies()
     
@@ -37,6 +38,8 @@ def get_movies():
         movies = [movie for movie in movies if movie.get('theme') == theme]
     if genre:
         movies = [movie for movie in movies if any(g.get('genre') == genre for g in movie.get('genres', []))]
+    if kinopoiskId:
+        movies = [movie for movie in movies if movie.get('kinopoiskId') == int(kinopoiskId)]
     if country:
         movies = [movie for movie in movies if any(c.get('country') == country for c in movie.get('countries', []))]
     if year:

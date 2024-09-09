@@ -193,7 +193,7 @@ body {
 //
 
 .film {
-    margin-top: 200px;
+    margin-top: 250px;
     min-width: 100%;
     &__container {
     }
@@ -206,6 +206,13 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
+.fmb-main-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.fmb-main-info-container {
+    max-width: 200px;
+}
 .film-main-block {
     color: white;
 
@@ -214,6 +221,7 @@ body {
         flex-direction: column;
         perspective: 1000px;
     }
+
     &__poster-container {
         width: 400px;
         height: 600px;
@@ -237,6 +245,8 @@ body {
     }
 
     &__btn-favorite {
+        text-transform: uppercase;
+        text-align: center;
         margin-top: 10px;
         padding: 10px;
         border-radius: 20px;
@@ -285,8 +295,19 @@ body {
     &__item span {
         margin-left: 10px;
     }
+    &__links {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -120px;
+    }
+    &__link {
+        background-color: #de8f1a;
+        box-shadow: inset 0px 0px 5px #000000;
+    }
 }
 .descriptipn-block {
+    margin-top: -60px;
     &__title {
         text-align: center;
         margin-bottom: 10px;
@@ -385,41 +406,40 @@ body {
     margin: 0 auto;
     color: #ffffff;
     text-align: center;
-    &__text, &__title, &__list{
+    &__text,
+    &__title,
+    &__list {
         z-index: 1;
     }
     &__title {
         font-size: 66px;
         line-height: 60px;
-        
+
         color: #ff0000ce;
         text-shadow: 0px 0px 20px red;
     }
     &__text {
         font-size: 32px;
         line-height: 60px;
-        & span{
+        & span {
             color: #ff0000ce;
-        text-shadow: 0px 0px 20px red;  
+            text-shadow: 0px 0px 20px red;
         }
     }
     &__list {
         font-size: 30px;
         line-height: 40px;
     }
-    &__link{
-        text-shadow: 0px 0px 20px rgb(145, 10, 73);;
+    &__link {
+        text-shadow: 0px 0px 20px rgb(145, 10, 73);
         color: rgb(145, 10, 73);
-        &:hover{
+        &:hover {
             opacity: 0.8;
         }
     }
-    &__img{
+    &__img {
         position: absolute;
-       opacity: 0.1;
-       filter: blur(5px);
+        opacity: 0.1;
+        filter: blur(5px);
     }
 }
-
-
-
