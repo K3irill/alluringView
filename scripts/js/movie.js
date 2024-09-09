@@ -87,8 +87,8 @@ class Movie {
                       resData.items[0].posterUrl
                     }" alt="">
           `;
-      this.moduleBlock.innerHTML = ""; 
-      this.moduleBlock.appendChild(moduleEl); 
+      this.moduleBlock.innerHTML = "";
+      this.moduleBlock.appendChild(moduleEl);
       const closeModalBtn = this.moduleBlock.querySelector(".modal-close");
       closeModalBtn.addEventListener("click", () => {
         this.moduleBlock.classList.remove("modal--show");
@@ -103,7 +103,6 @@ class Movie {
         const newUrl = `film.html?filmId=${transferedFilmId}`;
         window.location.href = newUrl;
       });
-
     } catch (error) {
       alert("Upssssss:", error);
     }
