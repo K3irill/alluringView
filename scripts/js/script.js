@@ -79,9 +79,10 @@ function R(min, max) {
 const bigBannerIBG = document.querySelector(".bigBanner_ibg");
 
 const bannerImgUrls = [
-  "https://i.pinimg.com/originals/c4/f4/ab/c4f4ab6daec6f7ac60bfac99e1ed9286.jpg",
-  "/img/index/banner/peace.jpg",
-  "/img/index/banner/peace-1.jpg",
+  "https://avatars.mds.yandex.net/i?id=d79ef4da83f4375f998e41fe4605dc65_l-7756406-images-thumbs&n=13",
+  "https://avatars.mds.yandex.net/i?id=47003c56ba0a8eb359f13dec653b4298_l-9243216-images-thumbs&n=13",
+  "https://i.pinimg.com/originals/d0/8e/22/d08e22c2ee9d0e49d0310147997466a4.jpg",
+  
 ];
 
 let currentImgUrl = 0;
@@ -94,4 +95,4 @@ function changeBannerImg() {
 
 setInterval(() => {
   changeBannerImg();
-}, 15000);
+}, 25000);
