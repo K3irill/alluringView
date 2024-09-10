@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>alluringView</title>
+    <!--  -->
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <!--  -->
+    <link rel="shortcut icon" href="/img/ico/AV.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Chicle:regular"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/for-searchPage/searchPage.css" />
+  </head>
+  <body>
+    <div id="wrapper" class="wrapper">
+      <header class="header__container __container">
+        <nav class="header__nav">
+          <div class="header__main">
+            <button class="header__part header_menu">
+              <img
+                class="header__part_img"
+                src="/img/index/header/menu-dots-svgrepo-com (1).svg"
+                alt=""
+              />
+            </button>
+            <div class="header__links header__links-active">
+              <span>Collection</span>
+            </div>
+            <div class="header__links">
+              <span>Catalog</span>
+            </div>
+            <form
+              id="header-search-form"
+              class="header__part_search-form"
+              method="submit"
+            >
+              <img
+                id="header-search-img"
+                class="header__part_img"
+                src="/img/index/header/search-alt-svgrepo-com.svg"
+                alt=""
+              />
+              <input
+                id="search-input"
+                class="header__part_search-input"
+                type="text"
+                placeholder="Название фильма"
+              />
+              <button
+                id="search-empty-input"
+                class="header__part_search-empty-input"
+              >
+                <img src="/img/index/close-tab-svgrepo-com.svg" />
+              </button>
+            </form>
+          </div>
+
+          <div class="header__settings">
+            <a href="/pages/signIn.html" class="header__avatar">
+              <img
+                class="header_userimg"
+                src="/img/index/header/user-svgrepo-com.svg"
+                alt=""
+              />
+            </a>
+            <button
+              id="headerSettings"
+              class="header__part header__part_settings"
+            >
+              <img
+                id="headerSettingsBtn"
+                class="header__part_img"
+                src="/img/index/header/settings-svgrepo-com.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="film-cards">
+          <div class="film-cards__container">
+            <ul class="film-cards__film-list">
+              <li class="film-cards__film-item film-card">
+                <img
+                  class="film-card__poster"
+                  src="https://pic.rutubelist.ru/video/b8/4e/b84e2f1b51a13867d8db05c6ee1e7381.jpg"
+                  alt=""
+                />
+                    <p class="film-card__rating">7.8</p>
+
+              </li>
+              <li class="film-cards__film-item film-card">
+                <img
+                  class="film-card__poster"
+                  src="https://pic.rutubelist.ru/video/b8/4e/b84e2f1b51a13867d8db05c6ee1e7381.jpg"
+                  alt=""
+                />
+                <p class="film-card__rating">7.8</p>
+              </li>
+              <li class="film-cards__film-item film-card">
+                <img
+                  class="film-card__poster"
+                  src="https://pic.rutubelist.ru/video/b8/4e/b84e2f1b51a13867d8db05c6ee1e7381.jpg"
+                  alt=""
+                />
+                <p class="film-card__rating">7.8</p>
+              </li>
+              <li class="film-cards__film-item film-card">
+                <img
+                  class="film-card__poster"
+                  src="https://pic.rutubelist.ru/video/b8/4e/b84e2f1b51a13867d8db05c6ee1e7381.jpg"
+                  alt=""
+                />
+                <p class="film-card__rating">7.8</p>
+              </li>
+            </ul>
+            <ul class="film-cards__pagination-wrapper">
+               
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/scripts/js/searchPage.js"></script>
+    <script src="/scripts/js/header.js"></script>
+  </body>
+</html>
