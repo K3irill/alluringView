@@ -43,30 +43,14 @@
             <div class="header__links">
               <span>Catalog</span>
             </div>
-            <form
-              id="header-search-form"
-              class="header__part_search-form"
-              method="submit"
-            >
-              <img
-                id="header-search-img"
-                class="header__part_img"
-                src="/img/index/header/search-alt-svgrepo-com.svg"
-                alt=""
-              />
-              <input
-                id="search-input"
-                class="header__part_search-input"
-                type="text"
-                placeholder="Название фильма"
-              />
-              <button
-                id="search-empty-input"
-                class="header__part_search-empty-input"
-              >
-                <img src="/img/index/close-tab-svgrepo-com.svg" />
-              </button>
-            </form>
+            <form id="header-search-form" class="header__part_search-form" method="get" action="searchPage.html">
+                <img id="header-search-img" class="header__part_img" src="/img/index/header/search-alt-svgrepo-com.svg" alt="Поиск" />
+                <input id="search-input" class="header__part_search-input" type="text" name="keyword" placeholder="Название фильма" />
+                <button id="search-empty-input" class="header__part_search-empty-input" type="button">
+                  <img src='/img/index/close-tab-svgrepo-com.svg' alt="Очистить" />
+                </button>
+                <button type="submit" class="header__part_search-submit hidden"><img class="header__part_img" src="/img/index/header/search-alt-svgrepo-com.svg" alt="Поиск" /></button>
+              </form>
           </div>
 
           <div class="header__settings">

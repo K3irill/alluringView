@@ -104,6 +104,15 @@ body {
         &_search {
             margin-left: 20px;
         }
+        &_search-submit{
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & img{
+                width: 15px;
+            }
+        }
         &_search-form{
             background-color: #ffffff31;
             color: #fff;
