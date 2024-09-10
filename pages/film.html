@@ -29,13 +29,16 @@
             <div class="header__links">
               <span>Catalog</span>
             </div>
-            <button id="" class="header__part header__part_search">
-              <img
+            <form id="header-search-form" class="header__part_search-form" method="submit"> 
+              <img id="header-search-img"
                 class="header__part_img"
                 src="/img/index/header/search-alt-svgrepo-com.svg"
                 alt=""
               />
-            </button>
+              <input id="search-input" class="header__part_search-input" type="text" placeholder="Название фильма">
+              <button id="search-empty-input" class="header__part_search-empty-input "><img src='/img/index/close-tab-svgrepo-com.svg'></img></button>
+            </form>
+            
           </div>
 
           <div class="header__settings">
@@ -66,6 +69,7 @@
         </div>
       </main>
     </div>
+    <script src="/scripts/js/header.js"></script>
     <script type="module" src="/scripts/js/film.js"></script>
     <script type="module" src="/scripts/js/carousel.js"></script>
   </body>

@@ -1,30 +1,4 @@
 const wrapper = document.querySelector(".wrapper");
-const headerSettingsBtn = document.getElementById("headerSettingsBtn");
-const headerSettingsMenu = document.getElementById("headerSettings-menu");
-
-function openHeaderSettings(params) {
-  headerSettingsMenu.classList.toggle("hidden");
-}
-headerSettingsBtn.addEventListener("click", () => openHeaderSettings());
-
-const changeBtn = document.querySelector(".theme-wrap");
-const themeSpan = document.querySelector(".theme");
-const pageSectionTitle = document.querySelectorAll(".pageSection__title");
-
-function changePositionSpan(params) {
-  changeBtn.classList.toggle("theme-end");
-  themeSpan.classList.toggle("theme_light");
-  wrapper.classList.toggle("theme_light");
-
-  pageSectionTitle.forEach((el) => {
-    el.classList.toggle("title_dark");
-  });
-}
-changeBtn.addEventListener("click", () => changePositionSpan());
-
-const input = document.getElementById("text-input");
-const button = document.getElementById("check-btn");
-const textResult = document.getElementById("result");
 
 var falling = true;
 
@@ -82,7 +56,6 @@ const bannerImgUrls = [
   "https://avatars.mds.yandex.net/i?id=d79ef4da83f4375f998e41fe4605dc65_l-7756406-images-thumbs&n=13",
   "https://avatars.mds.yandex.net/i?id=47003c56ba0a8eb359f13dec653b4298_l-9243216-images-thumbs&n=13",
   "https://i.pinimg.com/originals/d0/8e/22/d08e22c2ee9d0e49d0310147997466a4.jpg",
-  
 ];
 
 let currentImgUrl = 0;
