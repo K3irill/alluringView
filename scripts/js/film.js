@@ -1,5 +1,4 @@
-import { carousel } from "./carousel.js";
-import { carouselVideo } from "./carousel.js";
+import { initializePhotoCarousel, initializeVideoCarousel } from "./carousel.js";
 import { API_KEYS_KP } from "./keys.js";
 import { posterAnimation } from "./posterAnimation.js";
 var tag = document.createElement("script");
@@ -46,7 +45,7 @@ async function generatePage() {
           <a href="" class="film-main-block__btn-favorite">В ИЗБРАННОЕ</a>
         </div>
         <div class="film-main-block__main-info fmb-main-info">
-        <a href="/pages/index.html" class="btn-back">Назад</a>
+        <a href="/pages/index.html" class="btn-back">НА ГЛАВНУЮ</a>
         <h2 class="film-main-block__title">${sanitizeText(
           shortResp.nameRu
         )}</h2>
@@ -255,8 +254,8 @@ async function generatePage() {
             }
             liPhoto();
             liVideo();
-            carousel();
-            carouselVideo()
+            initializePhotoCarousel();
+initializeVideoCarousel();
             visible();
           }
         } else {
