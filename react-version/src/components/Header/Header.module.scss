@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__button-container {
+        display: flex;
+        > button {
+            margin-right: 10px;
+        }
+    }
+    &__button-settings {
+        display: flex;
+        > button {
+            margin-right: 10px;
+        }
+    }
+}
