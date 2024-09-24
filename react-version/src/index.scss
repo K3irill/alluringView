@@ -80,3 +80,10 @@ h6 {
     font-weight: 400;
 }
 /*  */
+
+#root {
+    min-width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}

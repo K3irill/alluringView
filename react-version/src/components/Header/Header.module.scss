@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    z-index: 1000;
+    min-width: 100%;
+    padding: 20px 40px;
     &__button-container {
         display: flex;
         > button {
