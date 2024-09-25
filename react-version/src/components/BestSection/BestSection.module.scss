@@ -1,0 +1,20 @@
+.best-section {
+  position: relative;
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  > h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: whitesmoke;
+    text-shadow: 0px 0px 10px black;
+  }
+  &__cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,13 @@
+.best-section {
+  &__card {
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    color: whitesmoke;
+    max-width: 400px;
+    > h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import "./App.css";
 import Banner from "./components/Banner/Banner";
+import { BestSection } from "./components/BestSection/BestSection";
 import Header from "./components/Header/Header";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <main>
         <Banner></Banner>
+        <BestSection />
       </main>
     </>
   );
