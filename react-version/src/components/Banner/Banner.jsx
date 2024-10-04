@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 import styles from "./Banner.module.scss";
 import { imagesArr } from "./images";
 export default function Banner({ type }) {
-  const [ibg, setIbg] = useState();
+  const [ibg, setIbg] = useState(imagesArr[0].url);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
