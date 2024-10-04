@@ -5,9 +5,10 @@ export default function BestCard({
   filmDescription,
   filmPoster,
   className,
+  onClick
 }) {
   return (
-    <div className={styles["best-section__card"]}>
+    <div className={styles["best-section__card"]} onClick={onClick}>
       <h3>{filmTitle}</h3>
       <p>{filmDescription}</p>
       <img className={styles["best-section__poster-ibg"]} src={filmPoster} alt={filmTitle} />

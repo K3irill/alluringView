@@ -3,7 +3,7 @@ import { dataBestFilmsArr } from "./dataBestFilms";
 import styles from "./BestSection.module.scss";
 import { useEffect, useState } from "react";
 import { fetchFilms } from "../../api/fetchFilms/fetchFilms";
-export function BestSection() {
+export function BestSection({ onFilmSelect }) {
   const [films, setFilms] = useState([]);
   const [error, setError] = useState(null);
 
@@ -12,7 +12,7 @@ export function BestSection() {
       try {
         const data = await fetchFilms();
         console.log(data);
-
+        
         setFilms(data.items);
       } catch (err) {
         setError(err.message); // Ловим и сохраняем ошибку
@@ -24,7 +24,6 @@ export function BestSection() {
   if (error) {
     return <div>Error: {error}</div>; // Отображаем ошибку, если есть
   }
-  console.log(films);
 
   return (
     <div className={styles["best-section"]}>
@@ -33,10 +32,11 @@ export function BestSection() {
         {films.slice(10, 13).map((item) => {
           return (
             <BestCard
+              onClick={() => onFilmSelect(item)}
               key={item.kinopoiskId}
               filmTitle={item.nameRu}
-              filmPoster={item.posterUrl}   
-                       //   filmDescription={item.description}
+              filmPoster={item.posterUrl}
+              //   filmDescription={item.description}
             />
           );
         })}
