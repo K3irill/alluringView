@@ -1,5 +1,4 @@
 import BestCard from "../BestCard/BestCard";
-import { dataBestFilmsArr } from "./dataBestFilms";
 import styles from "./BestSection.module.scss";
 import { useEffect, useState } from "react";
 import { fetchFilms } from "../../api/fetchFilms/fetchFilms";
@@ -10,8 +9,8 @@ export function BestSection({ onFilmSelect }) {
   useEffect(() => {
     async function getFilms() {
       try {
-        const data = await fetchFilms();
-        console.log(data);
+        const data = await fetchFilms('https://kinopoiskapiunofficial.tech/api/v2.2/films/collections?type=TOP_POPULAR_MOVIES&page=1');
+        // console.log(data);
         
         setFilms(data.items);
       } catch (err) {

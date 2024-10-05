@@ -1,8 +1,8 @@
-export async function fetchFilms() {
+export async function fetchFilms(url) {
   const API_KEY = import.meta.env.VITE_API_KEY;
   try {
     const response = await fetch(
-        'https://kinopoiskapiunofficial.tech/api/v2.2/films/collections?type=TOP_POPULAR_MOVIES&page=1',
+        url,
       {
         headers: {
           accept: "application/json",
@@ -15,4 +15,4 @@ export async function fetchFilms() {
     console.warn(err);
   }
 }
-fetchFilms();
+
