@@ -29,10 +29,10 @@ function App() {
           <>
             <Banner />
             <BestSection onFilmSelect={handleFilmSelect} />
-            <PopularSection></PopularSection>
-            <TopSection></TopSection>
-            <ComicsSection></ComicsSection>
-            <SeriesSection></SeriesSection>
+            <PopularSection onFilmSelect={handleFilmSelect} />
+            <TopSection onFilmSelect={handleFilmSelect} />
+            <ComicsSection onFilmSelect={handleFilmSelect} />
+            <SeriesSection onFilmSelect={handleFilmSelect} />
             
           </>
         ) : (

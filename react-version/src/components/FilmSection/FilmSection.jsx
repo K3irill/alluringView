@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export function FilmSection({ apiUrl, TitleCollection }) {
+export function FilmSection({ apiUrl, TitleCollection, onFilmSelect }) {
   const [films, setFilms] = useState([]);
   const [error, setError] = useState(null);
   useEffect(() => {
@@ -31,7 +31,7 @@ export function FilmSection({ apiUrl, TitleCollection }) {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
   };
 
   return (
@@ -44,6 +44,7 @@ export function FilmSection({ apiUrl, TitleCollection }) {
               <div
                 className={styles["FilmSection__card"]}
                 key={film.kinopoiskId}
+                onClick={() => onFilmSelect(film)}
               >
                 <img src={film.posterUrl} alt={film.nameRu} />
               </div>

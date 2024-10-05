@@ -4,7 +4,6 @@ export default function BestCard({
   filmTitle,
   filmDescription,
   filmPoster,
-  className,
   onClick
 }) {
   return (

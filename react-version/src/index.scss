@@ -1,73 +1,72 @@
 * {
-    padding: 0;
-    margin: 0;
-    border: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 *,
 * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 :focus,
 :active {
-    outline: none;
+  outline: none;
 }
 a:focus,
 a:active {
-    outline: none;
+  outline: none;
 }
 
 nav,
 footer,
 header,
 aside {
-    display: block;
+  display: block;
 }
 
 html,
 body {
-    height: 100%;
-    width: 100%;
-    font-size: 100%;
-    line-height: calc(26 / 16 * 100%);
-    font-size: 14px;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    font-family: Caveat;
-    font-size: 16px;
-
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: calc(26 / 16 * 100%);
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: Caveat;
+  font-size: 16px;
 }
 
 input,
 button,
 textarea {
-    font-family: inherit;
+  font-family: inherit;
 }
 
 input::-ms-clear {
-    display: none;
+  display: none;
 }
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 button::-moz-focus-inner {
-    padding: 0;
-    border: 0;
+  padding: 0;
+  border: 0;
 }
 a,
 a:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 ul li {
-    list-style: none;
+  list-style: none;
 }
 img {
-    vertical-align: top;
+  vertical-align: top;
 }
 
 h1,
@@ -76,18 +75,38 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: inherit;
-    font-weight: 400;
+  font-size: inherit;
+  font-weight: 400;
 }
 /*  */
 
 #root {
-    min-width: 100%;
-    min-height: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.904);
+  min-width: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.904);
 }
-.slick-slide > div{
-    margin: 0 20px;
+.slick-slide > div {
+  margin: 0 20px;
+}
+.slick-slider {
+  position: relative;
+}
+.slick-arrow {
+  position: absolute;
+  height: 100%;
+  width: 4rem;
+  transition: background-color 0.2s ease;
+  z-index: 1;
+  &:hover {
+    transition: background-color 0.2s ease;
+    background-color: #0000005d;
+  }
+  &:first-child {
+    left: 1px;
+  }
+}
+.slick-next {
+  right: 1px;
 }

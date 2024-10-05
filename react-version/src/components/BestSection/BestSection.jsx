@@ -14,14 +14,14 @@ export function BestSection({ onFilmSelect }) {
         
         setFilms(data.items);
       } catch (err) {
-        setError(err.message); // Ловим и сохраняем ошибку
+        setError(err.message);
       }
     }
     getFilms();
   }, []);
 
   if (error) {
-    return <div>Error: {error}</div>; // Отображаем ошибку, если есть
+    return <div>Error: {error}</div>;
   }
 
   return (
