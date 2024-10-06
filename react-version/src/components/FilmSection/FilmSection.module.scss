@@ -1,28 +1,27 @@
 .FilmSection {
-    >h2{
-        color: whitesmoke;
-        font-size: 36px;
-        margin: 50px 0px;
-        text-shadow: 0px 0px 20px rgba(245, 245, 245, 0.582);
-    }
-    &__cards-wrapper {
+  > h2 {
+    font-size: 36px;
+    margin: 50px 0px;
+  }
+  &__cards-wrapper {
     // margin:0px 50px;
     overflow: hidden;
   }
   &__card {
+    margin: 10px 0;
     width: 200px;
     height: 450px;
     border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    &:hover{
-        filter: brightness(0.7);
-        transition: all 0.2s ease-in-out;
-        transform: scale(0.9);
+    &:hover {
+      filter: brightness(0.7);
+      transition: all 0.2s ease-in-out;
+      transform: scale(0.9);
     }
-    &:active{
-        cursor: grabbing;
+    &:active {
+      cursor: grabbing;
     }
     > img {
       width: 100%;
@@ -31,3 +30,19 @@
   }
 }
 
+.dark-h2 {
+  color: whitesmoke;
+  text-shadow: 0px 0px 20px rgba(245, 245, 245, 0.582);
+}
+
+.light-h2 {
+  color: black;
+  text-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+.dark-card {
+  box-shadow: 0px 0px 10px rgba(245, 245, 245, 0.281);
+}
+.light-card {
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}

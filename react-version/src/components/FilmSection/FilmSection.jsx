@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../theme/ThemeContext";
 import styles from "./FilmSection.module.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -6,6 +8,7 @@ import { useFetchFilms } from "../../hooks/useFetchFilms";
 
 export function FilmSection({ apiUrl, TitleCollection, onFilmSelect }) {
   const { films, error } = useFetchFilms(apiUrl);
+  const { theme } = useContext(ThemeContext); 
 
   if (error) {
     return <div>Error: {error}</div>;
@@ -41,16 +44,18 @@ export function FilmSection({ apiUrl, TitleCollection, onFilmSelect }) {
       },
     ],
   };
-
+  
   return (
     <div className={styles["FilmSection"]}>
-      <h2>{TitleCollection}</h2>
+      <h2 className={theme === 'dark' ? styles['dark-h2'] : styles['light-h2']}>
+        {TitleCollection}
+      </h2>
       <div className={styles["FilmSection__cards-wrapper"]}>
         <Slider {...settings}>
           {films.map((film) => {
             return (
               <div
-                className={styles["FilmSection__card"]}
+                className={`${styles["FilmSection__card"]} ${theme === 'dark' ? styles['dark-card'] : styles['light-card']}`}
                 key={film.kinopoiskId}
                 onClick={() => onFilmSelect(film)}
               >
