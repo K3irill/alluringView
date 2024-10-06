@@ -94,7 +94,7 @@ export function FilmPage({ film, onBack }) {
             </a>
           </div>
           <div className={styles["film-main-block__descriptipn-block"]}>
-            <h2 className={styles["descriptipn-block__title"]}>Description</h2>
+            <h2 className={styles["descriptipn-block__title"]}>Описание</h2>
             <p className={styles["descriptipn-block__text"]}>{sanitizeText(film.description)}</p>
           </div>
         </div>

@@ -1,26 +1,11 @@
-import { fetchFilms } from "../../api/fetchFilms/fetchFilms";
 import styles from "./FilmSection.module.scss";
-import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useFetchFilms } from "../../hooks/useFetchFilms";
 
 export function FilmSection({ apiUrl, TitleCollection, onFilmSelect }) {
-  const [films, setFilms] = useState([]);
-  const [error, setError] = useState(null);
-  useEffect(() => {
-    async function getFilms() {
-      try {
-        const data = await fetchFilms(apiUrl);
-        console.log(data);
-
-        setFilms(data.items);
-      } catch (err) {
-        setError(err.message);
-      }
-    }
-    getFilms();
-  }, [apiUrl]);
+  const { films, error} = useFetchFilms(apiUrl)
 
   if (error) {
     return <div>Error: {error}</div>;
