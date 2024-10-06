@@ -1,14 +1,26 @@
+import { useEffect, useRef } from "react";
 import styles from "./FilmPage.module.scss";
+import { posterAnimation } from "./posterAnimation.js";
 
 export function FilmPage({ film, onBack }) {
+  const posterContainerRef = useRef(null);
+  const posterWrapRef = useRef(null);
+
   function sanitizeText(text) {
     return text ? text : "n/n";
   }
+
+  useEffect(() => {
+    if (posterWrapRef.current && posterContainerRef.current) {
+      posterAnimation(posterWrapRef.current, posterContainerRef.current);
+    }
+  }, []);
+
   return (
     <div className={styles["film"]}>
       <div className={styles[("film__main-block", "film-main-block")]}>
-        <div className={styles["film-main-block__poster-wrap"]}>
-          <div className={styles["film-main-block__poster-container"]}>
+      <div className={styles["film-main-block__poster-wrap"]} ref={posterWrapRef}>
+          <div className={styles["film-main-block__poster-container"]} ref={posterContainerRef}>
             <img
               src={film.posterUrl}
               alt="Poster"
@@ -75,7 +87,7 @@ export function FilmPage({ film, onBack }) {
           </div>
           <div className={styles["fmb-main-info__links"]}>
             <a
-              href=""
+              href={`https://w140.zona.plus/search/${film.nameRu}/`}
               className={`${styles["film-main-block__btn-favorite"]} ${styles["fmb-main-info__link"]}`}
             >
               Где посмотреть бесплатно
@@ -83,7 +95,7 @@ export function FilmPage({ film, onBack }) {
           </div>
           <div className={styles["film-main-block__descriptipn-block"]}>
             <h2 className={styles["descriptipn-block__title"]}>Description</h2>
-            <p className={styles["descriptipn-block__text"]}></p>
+            <p className={styles["descriptipn-block__text"]}>{sanitizeText(film.description)}</p>
           </div>
         </div>
       </div>
