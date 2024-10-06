@@ -1,8 +1,10 @@
+import { ThemeContext } from "../../theme/ThemeContext";
 import styles from "./Button-round.module.scss";
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 export default function ButtonRound({ onClick, children }) {
   const [isRotating, setIsRotating] = useState(false);
+  const {theme} = useContext(ThemeContext);
 
   const handleClick = () => {
     setIsRotating(true);
@@ -16,7 +18,7 @@ export default function ButtonRound({ onClick, children }) {
   return (
     <button
       onClick={handleClick}
-      className={`${styles.button} ${isRotating ? styles.rotating : ""}`}
+      className={`${styles.button} ${isRotating ? styles.rotating : ""} ${theme === "dark" ? styles["button--dark"] : styles["button--light"]}`}
     >
       {children}
     </button>

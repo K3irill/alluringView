@@ -1,9 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import styles from "./FilmPage.module.scss";
 import { posterAnimation } from "./posterAnimation.js";
 import { useNavigate } from "react-router-dom";
+import { ThemeContext } from "../../theme/ThemeContext.jsx";
 
 export function FilmPage({ film, onBack }) {
+  const { theme } = useContext(ThemeContext);
   const posterContainerRef = useRef(null);
   const posterWrapRef = useRef(null);
   const navigate = useNavigate();
@@ -18,7 +20,9 @@ export function FilmPage({ film, onBack }) {
   }, []);
 
   return (
-    <div className={styles["film"]}>
+    <div
+    className={`${styles.film} ${theme === "dark" ? styles["film--dark"] : styles["film--light"]}`}
+    >
       <div className={styles[("film__main-block", "film-main-block")]}>
         <div
           className={styles["film-main-block__poster-wrap"]}
@@ -34,7 +38,7 @@ export function FilmPage({ film, onBack }) {
               className={styles["film-main-block__poster"]}
             />
           </div>
-          <a href="#" className={styles["film-main-block__btn-favorite"]}>
+          <a href="#" className={`${styles["film-main-block__btn-favorite"]} ${theme === "dark" ? styles["film-main-block__btn-favorite--dark"] : styles["film-main-block__btn-favorite--light"]}`} >
             В ИЗБРАННОЕ
           </a>
         </div>
@@ -43,16 +47,16 @@ export function FilmPage({ film, onBack }) {
             НА ГЛАВНУЮ
           </button>
           <h2 className={styles["film-main-block__title"]}>{film.nameRu}</h2>
-          <h2 className={styles["film-main-block__subtitle"]}>
+          <h3 className={styles["film-main-block__subtitle"]}>
             {film.nameOriginal}
-          </h2>
+          </h3>
           <div className={styles["fmb-main-info-wrapper"]}>
             <div className={styles["fmb-main-info-container"]}>
-              <p className={styles["film-main-block__genres"]}>
+              <h3 className={styles["film-main-block__genres"]}>
                 {sanitizeText(
                   film.genres.map((genre) => genre.genre).join(", ")
                 )}
-              </p>
+              </h3>
               <div className={styles["fmb-main-info__info"]}>
                 <ul className={styles["fmb-main-info__list"]}>
                   <li className={styles["fmb-main-info__item"]}>

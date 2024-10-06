@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 20px rgba(118, 4, 122, 0.288);
     &__link{
         padding: 0.5rem 2rem;
         margin-right: 10px;
@@ -17,6 +18,7 @@
 
 .button--white {
     background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #00000027;
 }
 .button--black {
     background-color: rgba(0, 0, 0, 0.8);
