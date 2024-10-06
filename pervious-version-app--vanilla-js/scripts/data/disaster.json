@@ -1,0 +1,730 @@
+{
+  "theme": "disaster",
+  "total": 20,
+  "totalPages": 1,
+  "items": [
+    {
+      "kinopoiskId": 2213,
+      "imdbId": "tt0120338",
+      "nameRu": "Титаник",
+      "nameEn": null,
+      "nameOriginal": "Titanic",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Мексика"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "мелодрама"
+        },
+        {
+          "genre": "история"
+        }
+      ],
+      "ratingKinopoisk": 8.4,
+      "ratingImdb": 7.9,
+      "year": 1997,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/2213.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/2213.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/236744/2a0000017c072058bf3296e607be426aedf6/orig",
+      "logoUrl": "https://avatars.mds.yandex.net/get-ott/223007/2a000001729e8bc06ab8fbd24ff28cf4e297/orig",
+      "description": "В первом и последнем плавании шикарного «Титаника» встречаются двое. Пассажир нижней палубы Джек выиграл билет в карты, а богатая наследница Роза отправляется в Америку, чтобы выйти замуж по расчёту. Чувства молодых людей только успевают расцвести, и даже не классовые различия создадут испытания влюблённым, а айсберг, вставший на пути считавшегося непотопляемым лайнера.",
+      "ratingAgeLimits": "age12"
+    },
+    {
+      "kinopoiskId": 839818,
+      "imdbId": "tt5653294",
+      "nameRu": "Экипаж",
+      "nameEn": null,
+      "nameOriginal": null,
+      "countries": [
+        {
+          "country": "Россия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "приключения"
+        }
+      ],
+      "ratingKinopoisk": 7.7,
+      "ratingImdb": 6.6,
+      "year": 2016,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/839818.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/839818.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/2439731/2a0000017c07795df0878b291f34720a9b7d/orig",
+      "logoUrl": "https://avatars.mds.yandex.net/get-ott/2419418/2a00000177fe48536134850d98c063f47f09/orig",
+      "description": "Талантливый молодой лётчик Алексей Гущин не признаёт авторитетов, предпочитая поступать в соответствии с личным кодексом чести. За невыполнение абсурдного приказа его выгоняют из военной авиации, и только чудом он получает шанс летать на гражданских самолётах. \n\nГущин начинает свою лётную жизнь сначала. Его наставник — командир воздушного судна — суровый и принципиальный Леонид Зинченко. Его коллега — второй пилот, неприступная красавица Александра. Отношения складываются непросто. Но на грани жизни и смерти, когда земля уходит из-под ног, вокруг — огонь и пепел, и только в небе есть спасение, Гущин показывает всё, на что он способен. Только вместе экипаж сможет совершить подвиг и спасти сотни жизней.",
+      "ratingAgeLimits": "age6"
+    },
+    {
+      "kinopoiskId": 2941,
+      "imdbId": "tt0120591",
+      "nameRu": "Армагеддон",
+      "nameEn": null,
+      "nameOriginal": "Armageddon",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "фантастика"
+        },
+        {
+          "genre": "приключения"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "ratingKinopoisk": 7.8,
+      "ratingImdb": 6.7,
+      "year": 1998,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/2941.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/2941.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/1534341/2a0000017c079d9a42b1058df868849747a5/orig",
+      "logoUrl": "https://avatars.mds.yandex.net/get-ott/374297/2a0000016ef39c7b9d814d95559f23f4248a/orig",
+      "description": "Тень гигантского астероида легла на Землю. До рокового столкновения остаются считанные дни. Наступает Армагеддон, трагический финал мировой истории. Чтобы предотвратить катастрофу, необходимо чудо - или совместные усилия лучших из лучших вместе с технологической мощью всего созданного человеком. Сможет ли горстка людей противостоять вселенской стихии?..",
+      "ratingAgeLimits": "age12"
+    },
+    {
+      "kinopoiskId": 9298,
+      "imdbId": null,
+      "nameRu": "Выжить",
+      "nameEn": null,
+      "nameOriginal": "Alive",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Канада"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "приключения"
+        },
+        {
+          "genre": "история"
+        }
+      ],
+      "ratingKinopoisk": 7.7,
+      "ratingImdb": 7.1,
+      "year": 1992,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/9298.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/9298.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "Осенью 1972 года в пятницу тринадцатого октября над Андами потерпел катастрофу авиалайнер, на борту которого находилась школьная сборная по регби из Уругвая. Самолет рухнул на высокогорное плато, которое было полностью отрезано от внешнего мира.\n\nЗдесь, среди дикой стужи и трупов, горстке оставшихся в живых школьников предстоял жестокий, нечеловеческий тест на выживание. Семьдесят два бесконечных, мучительных дня молодые люди боролись за свою жизнь.\n\nУбежищем им служили обломки самолета, пищей - тела погибших товарищей. Иногда приходится превратиться в зверя, чтобы остаться человеком...",
+      "ratingAgeLimits": "age16"
+    },
+    {
+      "kinopoiskId": 2053,
+      "imdbId": "tt0319262",
+      "nameRu": "Послезавтра",
+      "nameEn": null,
+      "nameOriginal": "The Day After Tomorrow",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "фантастика"
+        },
+        {
+          "genre": "приключения"
+        }
+      ],
+      "ratingKinopoisk": 7.7,
+      "ratingImdb": 6.5,
+      "year": 2004,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/2053.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/2053.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/212840/2a0000017c27fe059a9011536a456aaf2376/orig",
+      "logoUrl": "https://avatars.mds.yandex.net/get-ott/1534341/2a00000176af97af944ca1c9e72b4a0269a1/orig",
+      "description": "Земля уверенно движется навстречу глобальной экологической катастрофе: в одной части света все живое погибает от засухи, в другой - разбушевавшаяся водная стихия сносит города.\n\nБлизость катастрофы вынуждает ученого-климатолога, пытающегося найти способ остановить глобальное потепление, отправиться на поиски пропавшего сына в Нью-Йорк, в котором наступил новый ледниковый период…",
+      "ratingAgeLimits": "age12"
+    },
+    {
+      "kinopoiskId": 2022,
+      "imdbId": "tt0116629",
+      "nameRu": "День независимости",
+      "nameEn": null,
+      "nameOriginal": "Independence Day",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "фантастика"
+        },
+        {
+          "genre": "приключения"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "ratingKinopoisk": 7.6,
+      "ratingImdb": 7,
+      "year": 1996,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/2022.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/2022.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/239697/2a0000017c077722e10ee054a87814be2cc0/orig",
+      "logoUrl": "https://avatars.mds.yandex.net/get-ott/2439731/2a0000017255060a2b4ae11882b9a339f4b5/orig",
+      "description": "На Земле принимается сигнал, посланный источником явно неземного происхождения. Источник этот приближается, и на «уши» поднимается вся планета. Никто, правда, не ожидал, что инопланетяне окажутся такими огромными и в таком количестве.",
+      "ratingAgeLimits": "age12"
+    },
+    {
+      "kinopoiskId": 722,
+      "imdbId": "tt0267626",
+      "nameRu": "К-19",
+      "nameEn": null,
+      "nameOriginal": "K-19: The Widowmaker",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Великобритания"
+        },
+        {
+          "country": "Германия"
+        },
+        {
+          "country": "Канада"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "военный"
+        },
+        {
+          "genre": "история"
+        }
+      ],
+      "ratingKinopoisk": 7.5,
+      "ratingImdb": 6.7,
+      "year": 2002,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/722.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/722.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/2439731/2a0000017c075c80bfb555c55b18431dd135/orig",
+      "logoUrl": null,
+      "description": "Фильм основан на реальных событиях, произошедших с первой атомной советской подводной лодкой, которая потерпела аварию из-за неполадок в атомном реакторе в 1961 году. К-19 - это зримое свидетельство героизма русских моряков, которые служили на этой подводной лодке.\n\nФильм демонстрирует героизм капитана Алексея Вострикова, который в разгар холодной войны берет на себя командование атомной подводной лодкой К-19 вместо ее первого капитана Михаила Поленина. Миссия Вострикова - быстро подготовить подлодку к погружению, чего бы это ни стоило.\n\nНо Востриков, Поленин и члены экипажа К-19 не могли себе вообразить всего, что от них ожидалось. Они не могли представить, какой ценой обойдется для них стремительность подготовки субмарины к погружению...",
+      "ratingAgeLimits": "age12"
+    },
+    {
+      "kinopoiskId": 2610,
+      "imdbId": null,
+      "nameRu": "Белый шквал",
+      "nameEn": null,
+      "nameOriginal": "White Squall",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Великобритания"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "приключения"
+        }
+      ],
+      "ratingKinopoisk": 7.4,
+      "ratingImdb": 6.6,
+      "year": 1995,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/2610.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/2610.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/2439731/2a0000017c079ed253a3b1ee321ed9a96d28/orig",
+      "logoUrl": "https://avatars.mds.yandex.net/get-ott/2419418/2a00000177728974f1b1a2a86e5cf924febd/orig",
+      "description": "На грани между Жизнью и Смертью рождается мужской характер. Осенью 1960 года парусная бригантина «Альбатрос» под руководством капитана Кристофера Шелдона ушла в кругосветное плавание. Оно могло бы стать чуть ли не круизом, если бы проходило при тихой погоде. \r\n\r\nНо мальчишки, заканчивавшие на борту «Альбатроса» обучение в Океанской академии, знали, сколь обманчивым любит прикидываться океан. Они знали, что в шторм океан перестает быть безбрежным: многометровые волны окружают небольшой кораблик в жажде раздавить его, и куда ни бросишь взгляд - всюду только стена, громадная стена воды. \r\n\r\nОни знали, что в шторм океан перестает быть прозрачным: мутная грязь так и норовит заткнуть твой рот навсегда, чтобы ты нашел свой покой где-нибудь на дне этого страшного зверя. Они знали, что в шторм океан перестает быть тихим: за его ревом не слышен даже собственный вопль, вырывающийся из груди с последним предсмертным хрипом... \r\n\r\nНе всем членам экипажа «Альбатроса» суждено было остаться в живых...",
+      "ratingAgeLimits": "age12"
+    },
+    {
+      "kinopoiskId": 783,
+      "imdbId": "tt0177971",
+      "nameRu": "Идеальный шторм",
+      "nameEn": null,
+      "nameOriginal": "The Perfect Storm",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "приключения"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "ratingKinopoisk": 7.3,
+      "ratingImdb": 6.5,
+      "year": 2000,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/783.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/783.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/200035/2a000001862b996d602f03f60a713dc899d4/orig",
+      "logoUrl": null,
+      "description": "Волны Атлантики вздымаются на 30-метровую высоту. Завывающий ветер невиданной силы. Хэллоуин 1991 года. Стихия наступает по трём фронтам, и один из них поднимает сильнейший шторм.",
+      "ratingAgeLimits": "age18"
+    },
+    {
+      "kinopoiskId": 102245,
+      "imdbId": "tt0448134",
+      "nameRu": "Пекло",
+      "nameEn": null,
+      "nameOriginal": "Sunshine",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Великобритания"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "фантастика"
+        }
+      ],
+      "ratingKinopoisk": 7.3,
+      "ratingImdb": 7.2,
+      "year": 2007,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/102245.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/102245.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/2439731/2a00000183c16e9d1c28707d0a26d55ca2db/orig",
+      "logoUrl": null,
+      "description": "2057 год. Солнце погибает, и человечество сталкивается с перспективой вымирания. Последняя надежда планеты Земля связана с «Икаром 2» - космическим кораблем, экипаж которого состоит из восьми мужчин и женщин во главе с капитаном Канэдой. Их миссия – доставить ядерный заряд, с помощью которого предполагается повторно воспламенить гаснущее Солнце.\n\nВо время путешествия, находясь далеко в космическом безмолвии, в отсутствии какого-либо радиоконтакта с Землей экипаж слышит слабые позывные сигналы с космического корабля «Икар 1», который пропал, выполняя семь лет назад ту же самую миссию.",
+      "ratingAgeLimits": "age18"
+    },
+    {
+      "kinopoiskId": 8145,
+      "imdbId": "tt0072308",
+      "nameRu": "Вздымающийся ад",
+      "nameEn": null,
+      "nameOriginal": "The Towering Inferno",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "ratingKinopoisk": 7.2,
+      "ratingImdb": 7,
+      "year": 1974,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/8145.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/8145.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "В роковую ночь группа несчастных гостей остается запертой страшным пожаром на верхних этажах небоскреба. Архитектор здания, ставший вынужденным узником своего творения, пытается помочь шефу пожарных спасти людей.",
+      "ratingAgeLimits": "age12"
+    },
+    {
+      "kinopoiskId": 16257,
+      "imdbId": "tt0069113",
+      "nameRu": "Приключения «Посейдона»",
+      "nameEn": null,
+      "nameOriginal": "The Poseidon Adventure",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "приключения"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "ratingKinopoisk": 7.1,
+      "ratingImdb": 7.1,
+      "year": 1972,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/16257.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/16257.jpg",
+      "coverUrl": null,
+      "logoUrl": null,
+      "description": "Празднование Нового года на роскошном океанском лайнере «Посейдон», идущем из Америки в Грецию, прерывается внезапным ударом гигантской волны, вызванной близким подводным землетрясением. Вода обрушивается на корабль и переворачивает его.\n\nНебольшой горстке людей во главе со священником чудом удается пробраться в отсеки, еще не заполненные водой. Пассажирам придется пережить несколько жутких часов в напряженной борьбе за выживание, прежде чем они снова увидят свет солнца.",
+      "ratingAgeLimits": "age12"
+    },
+    {
+      "kinopoiskId": 1722,
+      "imdbId": "tt0117998",
+      "nameRu": "Смерч",
+      "nameEn": null,
+      "nameOriginal": "Twister",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "приключения"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "ratingKinopoisk": 7.2,
+      "ratingImdb": 6.5,
+      "year": 1996,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1722.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1722.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/2419418/2a0000017c078c1b6990edca0a2acf99d48d/orig",
+      "logoUrl": null,
+      "description": "Рушащиеся, словно карточные домики, здания, разорванные линии электропередач, поднятые в воздух автомобили и животные, гибнущие люди. Мелкими и незначительными оказываются личные неурядицы героев перед лицом разбушевавшейся стихии. Метеорологи вступают в поединок с грозным и малоизученным явлением природы.",
+      "ratingAgeLimits": "age12"
+    },
+    {
+      "kinopoiskId": 521689,
+      "imdbId": null,
+      "nameRu": "Метро",
+      "nameEn": null,
+      "nameOriginal": null,
+      "countries": [
+        {
+          "country": "Россия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "драма"
+        }
+      ],
+      "ratingKinopoisk": 7.2,
+      "ratingImdb": 6.4,
+      "year": 2012,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/521689.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/521689.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/224348/2a0000017c0742f22ae81c8cc5cc0c0245e7/orig",
+      "logoUrl": null,
+      "description": "Широко развернувшееся в центре Москвы строительство новых зданий приводит к тому, что в одном из тоннелей метро между двумя станциями возникает трещина. Никто себе и представить не мог, что в результате нарушения герметичности перекрытия в тоннель хлынет вода из Москва-реки, и сотни пассажиров поезда окажутся во власти надвигающегося потопа. Бешеный поток воды грозит не только обрушением тоннелей метро, но и разрушением всего города.\n\nСреди попавших в беду людей – врач городской больницы Андрей Гарин и его дочь Ксюша. Гарин сражается с катастрофой, пытаясь спасти оставшихся в живых пассажиров, в компании любовника своей жены. Гарину придется побороть обиду, гнев и страх. Он должен выжить, чтобы вернуть свою любовь, семью… свою прежнюю счастливую жизнь.",
+      "ratingAgeLimits": "age18"
+    },
+    {
+      "kinopoiskId": 81289,
+      "imdbId": "tt0407304",
+      "nameRu": "Война миров",
+      "nameEn": null,
+      "nameOriginal": "War of the Worlds",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Канада"
+        },
+        {
+          "country": "Япония"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "фантастика"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "ratingKinopoisk": 7.1,
+      "ratingImdb": 6.5,
+      "year": 2005,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/81289.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/81289.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/1534341/2a0000017c0821f319943d0daea09d3562ca/orig",
+      "logoUrl": "https://avatars.mds.yandex.net/get-ott/2439731/2a000001720d08d33dc30a77a3969d3d44cc/orig",
+      "description": "На Землю нападают высокоразвитые пришельцы. Пока армия ведёт ожесточённые бои с захватчиками, обычный семьянин Рэй стремится выжить, чтобы любой ценой спасти своих детей.",
+      "ratingAgeLimits": "age18"
+    },
+    {
+      "kinopoiskId": 5011,
+      "imdbId": "tt0120647",
+      "nameRu": "Столкновение с бездной",
+      "nameEn": null,
+      "nameOriginal": "Deep Impact",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "фантастика"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "ratingKinopoisk": 7.1,
+      "ratingImdb": 6.2,
+      "year": 1998,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/5011.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/5011.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/1534341/2a0000017c28084185fd1ba2ec888aaef9f7/orig",
+      "logoUrl": "https://avatars.mds.yandex.net/get-ott/212840/2a0000017e7c44c4d1305536e307e1f1afe3/orig",
+      "description": "Земле грозит неизбежное столкновением с кометой, что приведет к гибели всего живого. Президент США сообщает миру, что до «столкновения с бездной» остается год. На комету отправляют корабль «Мессия» который должен взорвать комету. Но от взрыва комета разлетается на две части. Ничто не может спасти человечество. Как поведут себя люди?...",
+      "ratingAgeLimits": "age12"
+    },
+    {
+      "kinopoiskId": 5506,
+      "imdbId": "tt0116040",
+      "nameRu": "Дневной свет",
+      "nameEn": null,
+      "nameOriginal": "Daylight",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "приключения"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "ratingKinopoisk": 7,
+      "ratingImdb": 5.9,
+      "year": 1996,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/5506.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/5506.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/374297/2a0000017d90bea2c5c088458b32513ebd1a/orig",
+      "logoUrl": "https://avatars.mds.yandex.net/get-ott/239697/2a0000017d9db9fb691e8f284900bfd1cd7b/orig",
+      "description": "Машина таксиста Кита Латуры в момент взрыва оказывается на въезде в огромный подводный тоннель, ведущий в Нью-Джерси. Огромный огненный шар проносится по тоннелю. В живых остается только дюжина испуганных людей. Без посторонней помощи им не выбраться. Кит Латура совершает отчаянную попытку пробраться в тоннель и вывести из него людей. \r\n\r\nМного лет назад он работал в службе спасения, но был уволен, когда сотрудники, находившиеся у него в подчинении, погибли, выполняя его приказы. Теперь у Латуры появляется шанс искупить свою вину. Он должен спасти беззащитных людей.",
+      "ratingAgeLimits": "age12"
+    },
+    {
+      "kinopoiskId": 608559,
+      "imdbId": "tt2025690",
+      "nameRu": "И грянул шторм",
+      "nameEn": null,
+      "nameOriginal": "The Finest Hours",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Великобритания"
+        },
+        {
+          "country": "Индия"
+        },
+        {
+          "country": "Канада"
+        },
+        {
+          "country": "Греция"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "боевик"
+        },
+        {
+          "genre": "история"
+        }
+      ],
+      "ratingKinopoisk": 7,
+      "ratingImdb": 6.7,
+      "year": 2016,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/608559.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/608559.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/1534341/2a0000017c07782ef91acb580c8e5b63b597/orig",
+      "logoUrl": "https://avatars.mds.yandex.net/get-ott/2439731/2a0000017772c90465b984ef4d0224031c95/orig",
+      "description": "Сюжет фильма основан на реальных событиях, произошедших в 1952 году, когда сотрудники береговой охраны в самый разгар шторма, используя деревянные моторные лодки, пытались спасти экипаж двух нефтяных танкеров.",
+      "ratingAgeLimits": "age18"
+    },
+    {
+      "kinopoiskId": 374718,
+      "imdbId": null,
+      "nameRu": "Монстро",
+      "nameEn": null,
+      "nameOriginal": "Cloverfield",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "детектив"
+        },
+        {
+          "genre": "фантастика"
+        },
+        {
+          "genre": "ужасы"
+        }
+      ],
+      "ratingKinopoisk": 6.9,
+      "ratingImdb": 7,
+      "year": 2007,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/374718.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/374718.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/200035/2a0000017e7c34d1499b0fe9b02033e9cf67/orig",
+      "logoUrl": "https://avatars.mds.yandex.net/get-ott/1534341/2a0000017e7c34c06597a1150ec0d70fce54/orig",
+      "description": "Прощальную вечеринку уезжающего в Японию Роба прерывает громогласный рык — нечто напало на Нью-Йорк, сея панику, разрушения и пожирая людей. Армия бессильна против гигантского монстра, Манхэттен объявлен закрытой зоной, но где-то неподалеку от Центрального парка в беду попала девушка Роба.",
+      "ratingAgeLimits": "age18"
+    },
+    {
+      "kinopoiskId": 413447,
+      "imdbId": "tt1190080",
+      "nameRu": "2012",
+      "nameEn": null,
+      "nameOriginal": "2012",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "фантастика"
+        },
+        {
+          "genre": "приключения"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "ratingKinopoisk": 6.9,
+      "ratingImdb": 5.8,
+      "year": 2009,
+      "type": "FILM",
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/413447.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/413447.jpg",
+      "coverUrl": "https://avatars.mds.yandex.net/get-ott/200035/2a0000017c0724a34dcf392082f8fee64d07/orig",
+      "logoUrl": null,
+      "description": "Согласно календарю индейцев Майя, в 2012 году планеты солнечной системы окажутся на одной линии друг с другом, что приведет к глобальным природным катаклизмам: сильнейшие землетрясения, цунами и извержения вулканов превратят страны и целые континенты в руины. Недавно ученые подтвердили, что этот миф может стать реальностью.",
+      "ratingAgeLimits": "age18"
+    }
+  ]
+}

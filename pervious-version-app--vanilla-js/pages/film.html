@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>alluringView</title>
+    <link rel="shortcut icon" href="/img/ico/AV.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/for-film/film.css" />
+  </head>
+  <body>
+    <div id="wrapper" class="wrapper">
+      <header class="header__container __container">
+        <nav class="header__nav">
+          <div class="header__main">
+            <button class="header__part header_menu">
+              <img
+                class="header__part_img"
+                src="/img/index/header/menu-dots-svgrepo-com (1).svg"
+                alt=""
+              />
+            </button>
+            <div class="header__links header__links-active">
+              <span>Collection</span>
+            </div>
+            <div class="header__links">
+              <span>Catalog</span>
+            </div>
+            <form id="header-search-form" class="header__part_search-form" method="get" action="searchPage.html">
+              <img id="header-search-img" class="header__part_img" src="/img/index/header/search-alt-svgrepo-com.svg" alt="Поиск" />
+              <input id="search-input" class="header__part_search-input" type="text" name="keyword" placeholder="Название фильма" />
+              <button id="search-empty-input" class="header__part_search-empty-input" type="button">
+                <img src='/img/index/close-tab-svgrepo-com.svg' alt="Очистить" />
+              </button>
+              <button type="submit" class="header__part_search-submit hidden"><img class="header__part_img" src="/img/index/header/search-alt-svgrepo-com.svg" alt="Поиск" /></button>
+            </form>
+            
+          </div>
+
+          <div class="header__settings">
+            <a href="/pages/signIn.html" class="header__avatar">
+              <img
+                class="header_userimg"
+                src="/img/index/header/user-svgrepo-com.svg"
+                alt=""
+              />
+            </a>
+            <button
+              id="headerSettings"
+              class="header__part header__part_settings"
+            >
+              <img
+                id="headerSettingsBtn"
+                class="header__part_img"
+                src="/img/index/header/settings-svgrepo-com.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="film">
+          
+        </div>
+      </main>
+    </div>
+    <script src="/scripts/js/header.js"></script>
+    <script type="module" src="/scripts/js/film.js"></script>
+    <script type="module" src="/scripts/js/carousel.js"></script>
+  </body>
+</html>

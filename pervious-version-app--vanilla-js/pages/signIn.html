@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB-SITE</title>
+    <link rel="shortcut icon" href="./img/mops.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Revalia:regular"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/for-sign/sign-style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <video autoplay loop muted class="bgvideo" id="bgvideo">
+        <source src="/img/signUp/signUp-bg-mp.mp4" type="video/mp4">
+      </video>
+      <div class="container">
+        <div class="raindrop"></div>
+      </div>
+      <div class="lang">
+        <button class="lang-btn">Ru</button>
+      </div>
+      <div class="signIn__container __container">
+        <div class="signIn">
+          <div class="signIn__login-container login-container">
+            <h2 class="login-container_title">Вход</h2>
+            <form>
+              <input
+                id="signUp-login"
+                type="text"
+                placeholder="Логин"
+                required
+              />
+              <input
+                id="signUp-password"
+                type="password"
+                placeholder="Пароль"
+                required
+              />
+              <button class="login-container_btn" type="submit">Войти</button>
+            </form>
+            <div class="login-container__links-wrap">
+              <a href="#" class="login-container_link">Забыли пароль?</a>
+              <a href="signUp.html" class="login-container_link"
+                >Нет аккаунта?</a
+              >
+              <a href="index.html" class="login-container_link"
+                >Войти как гость</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="raindrop.js"></script>
+  </body>
+</html>
