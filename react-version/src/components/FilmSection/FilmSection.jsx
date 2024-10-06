@@ -15,7 +15,7 @@ export function FilmSection({ apiUrl, TitleCollection, onFilmSelect }) {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 3,
     responsive: [
       {

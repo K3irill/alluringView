@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Button from "../../ui/Button/Button";
 import styles from "./Banner.module.scss";
+import stylesForBtn from '../../ui/Button/Button.module.scss'
 import { imagesArr } from "./images";
 export default function Banner({ type }) {
   const [ibg, setIbg] = useState(imagesArr[0].url);
@@ -29,7 +30,14 @@ export default function Banner({ type }) {
         <div className={styles["BigBanner__main-content"]}>
           <h1 className={styles["BigBanner__title"]}>Spirited Away</h1>
           <div className={styles["BigBanner__buttons"]}>
-            <Button buttonType={"white"}>Watch</Button>
+            <a 
+            href="https://ag.kinozadrot3.site/89-unesennye-prizrakami-2001.html" 
+            className={`${stylesForBtn.button} ${stylesForBtn["button--white"]} ${stylesForBtn['button__link']}`}
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            Watch
+          </a>
             <Button buttonType={"black"}>About</Button>
           </div>
         </div>
