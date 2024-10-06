@@ -18,7 +18,7 @@ function App() {
   };
 
   return (
-    <Router basename='/alluringView/'>
+    <Router basename='/alluringView'>
       <Header />
       <main>
         <Routes>
