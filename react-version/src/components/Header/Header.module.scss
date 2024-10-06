@@ -6,8 +6,15 @@
     z-index: 1000;
     min-width: 100%;
     padding: 20px 40px;
+    @media (max-width: 420px) {
+        & {
+            padding: 10px 10px;
+        }
+        
+      }
     &__button-container {
         display: flex;
+        align-items: center;
         > button {
             margin-right: 10px;
         }
