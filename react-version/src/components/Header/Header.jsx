@@ -4,16 +4,18 @@ import styles from "./Header.module.scss";
 import { Search, User, SunMoon } from "lucide-react";
 import { useContext } from "react";
 import { ThemeContext } from "../../theme/ThemeContext";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Header({ type }) {
   const { theme, toggleTheme } = useContext(ThemeContext);
-
+  const navigate = useNavigate();
   return (
     <>
       <header className={styles.header}>
         <div className={styles["header__button-container"]}>
           <Button buttonType={"white"}>Collection</Button>
-          <Button>Catalog</Button>
+          <Button onClick={() => navigate("/")}>Home</Button>
           <ButtonRound>
             <Search style={{ color: "white" }} size={17} />
           </ButtonRound>

@@ -26,7 +26,7 @@ function App() {
             path="/"
             element={
               <>
-                <Banner />
+                <Banner onFilmSelect={handleFilmSelect}/>
                 <BestSection onFilmSelect={handleFilmSelect} />
                 <PopularSection onFilmSelect={handleFilmSelect} />
                 <TopSection onFilmSelect={handleFilmSelect} />

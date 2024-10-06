@@ -20,6 +20,8 @@ export function BestSection({ onFilmSelect }) {
             <BestCard
               onClick={() => {
                 onFilmSelect(item);
+                console.log(item);
+                
                 navigate(`/film/${item.kinopoiskId}`);
               }}
               key={item.kinopoiskId}
