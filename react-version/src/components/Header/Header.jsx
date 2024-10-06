@@ -1,5 +1,5 @@
-import Button from "../Button/Button";
-import ButtonRound from "../Button-round/Button-round";
+import Button from "../../ui/Button/Button";
+import ButtonRound from "../../ui/Button-round/Button-round";
 import styles from "./Header.module.scss";
 import { Search, User, Bolt } from "lucide-react";
 export default function Header({ type }) {

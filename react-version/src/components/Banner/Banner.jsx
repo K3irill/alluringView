@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Button from "../Button/Button";
+import Button from "../../ui/Button/Button";
 import styles from "./Banner.module.scss";
 import { imagesArr } from "./images";
 export default function Banner({ type }) {

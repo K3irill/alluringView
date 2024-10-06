@@ -18,9 +18,9 @@
     color: whitesmoke;
     width: 400px;
     height: 170px;
-    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease;
     &:hover{
-      transition: transform 0.2s ease-in;
+      transition: transform 0.2s ease;
       transform: translateY(-15px)
     }
     > h3 {
