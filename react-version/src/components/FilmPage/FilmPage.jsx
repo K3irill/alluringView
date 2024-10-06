@@ -1,10 +1,16 @@
-import { useContext, useEffect, useRef } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import styles from "./FilmPage.module.scss";
 import { posterAnimation } from "./posterAnimation.js";
 import { useNavigate } from "react-router-dom";
 import { ThemeContext } from "../../theme/ThemeContext.jsx";
+import { useFetchFilms } from "../../hooks/useFetchFilms.js";
+import { fetchFilms } from "../../api/fetchFilms/fetchFilms.js";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export function FilmPage({ film, onBack }) {
+  const [imgs, setImg] = useState([]);
   const { theme } = useContext(ThemeContext);
   const posterContainerRef = useRef(null);
   const posterWrapRef = useRef(null);
@@ -13,15 +19,60 @@ export function FilmPage({ film, onBack }) {
     return text ? text : "n/n";
   }
 
+  const apiImgUrl = `https://kinopoiskapiunofficial.tech/api/v2.2/films/${film.kinopoiskId}/images?type=STILL&page=1`;
+
+  useEffect(() => {
+    async function getFilms() {
+      try {
+        const data = await fetchFilms(apiImgUrl);
+        setImg(data.items);
+      } catch (err) {}
+    }
+    getFilms();
+  }, [apiImgUrl]);
+
   useEffect(() => {
     if (posterWrapRef.current && posterContainerRef.current) {
       posterAnimation(posterWrapRef.current, posterContainerRef.current);
     }
   }, []);
 
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 980,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div
-    className={`${styles.film} ${theme === "dark" ? styles["film--dark"] : styles["film--light"]}`}
+      className={`${styles.film} ${
+        theme === "dark" ? styles["film--dark"] : styles["film--light"]
+      }`}
     >
       <div className={styles[("film__main-block", "film-main-block")]}>
         <div
@@ -38,7 +89,14 @@ export function FilmPage({ film, onBack }) {
               className={styles["film-main-block__poster"]}
             />
           </div>
-          <a href="#" className={`${styles["film-main-block__btn-favorite"]} ${theme === "dark" ? styles["film-main-block__btn-favorite--dark"] : styles["film-main-block__btn-favorite--light"]}`} >
+          <a
+            href="#"
+            className={`${styles["film-main-block__btn-favorite"]} ${
+              theme === "dark"
+                ? styles["film-main-block__btn-favorite--dark"]
+                : styles["film-main-block__btn-favorite--light"]
+            }`}
+          >
             В ИЗБРАННОЕ
           </a>
         </div>
@@ -115,12 +173,28 @@ export function FilmPage({ film, onBack }) {
       <div className={styles["film__frames-container"]}>
         <ul className={styles["frames-container__list"]}>
           <li className={styles["frames-container__item"]}>Фото</li>
-          <li className={styles["frames-container__item"]}>Видео</li>
+          {/* <li className={styles["frames-container__item"]}>Видео</li> */}
         </ul>
         <div
           id="photo-container"
-          className={styles["frames-container__photo-container"]}
-        ></div>
+          className={`${styles["frames-container__photo-container"]} ${styles["photo-container"]}`}
+        >
+          <ul>
+            <Slider {...settings}>
+              {imgs.map((img) => {
+                return (
+                  <li>
+                    <img
+                      className={styles["photo-container_imgs"]}
+                      src={img.imageUrl}
+                      alt=""
+                    />
+                  </li>
+                );
+              })}
+            </Slider>
+          </ul>
+        </div>
       </div>
     </div>
   );
