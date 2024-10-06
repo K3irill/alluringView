@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { fetchFilms } from "../api/fetchFilms/fetchFilms";
 
 export function useFetchFilms(apiUrl) {
   const [films, setFilms] = useState(() => {
