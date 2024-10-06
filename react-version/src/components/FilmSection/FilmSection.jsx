@@ -5,10 +5,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useFetchFilms } from "../../hooks/useFetchFilms";
+import { useNavigate } from "react-router-dom";
 
 export function FilmSection({ apiUrl, TitleCollection, onFilmSelect }) {
   const { films, error } = useFetchFilms(apiUrl);
   const { theme } = useContext(ThemeContext); 
+  const navigate = useNavigate();
 
   if (error) {
     return <div>Error: {error}</div>;
@@ -44,7 +46,7 @@ export function FilmSection({ apiUrl, TitleCollection, onFilmSelect }) {
       },
     ],
   };
-  
+
   return (
     <div className={styles["FilmSection"]}>
       <h2 className={theme === 'dark' ? styles['dark-h2'] : styles['light-h2']}>
@@ -57,7 +59,10 @@ export function FilmSection({ apiUrl, TitleCollection, onFilmSelect }) {
               <div
                 className={`${styles["FilmSection__card"]} ${theme === 'dark' ? styles['dark-card'] : styles['light-card']}`}
                 key={film.kinopoiskId}
-                onClick={() => onFilmSelect(film)}
+                onClick={() => {
+                  onFilmSelect(film);
+                  navigate(`/film/${film.kinopoiskId}`);
+                }}
               >
                 <img src={film.posterUrl} alt={film.nameRu} />
               </div>

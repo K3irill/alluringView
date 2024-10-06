@@ -1,11 +1,12 @@
 import { useEffect, useRef } from "react";
 import styles from "./FilmPage.module.scss";
 import { posterAnimation } from "./posterAnimation.js";
+import { useNavigate } from "react-router-dom";
 
 export function FilmPage({ film, onBack }) {
   const posterContainerRef = useRef(null);
   const posterWrapRef = useRef(null);
-
+  const navigate = useNavigate();
   function sanitizeText(text) {
     return text ? text : "n/n";
   }
@@ -19,8 +20,14 @@ export function FilmPage({ film, onBack }) {
   return (
     <div className={styles["film"]}>
       <div className={styles[("film__main-block", "film-main-block")]}>
-      <div className={styles["film-main-block__poster-wrap"]} ref={posterWrapRef}>
-          <div className={styles["film-main-block__poster-container"]} ref={posterContainerRef}>
+        <div
+          className={styles["film-main-block__poster-wrap"]}
+          ref={posterWrapRef}
+        >
+          <div
+            className={styles["film-main-block__poster-container"]}
+            ref={posterContainerRef}
+          >
             <img
               src={film.posterUrl}
               alt="Poster"
@@ -32,7 +39,7 @@ export function FilmPage({ film, onBack }) {
           </a>
         </div>
         <div className={styles["film-main-block__main-info"]}>
-          <button onClick={onBack} className={styles["btn-back"]}>
+          <button onClick={() => navigate("/")} className={styles["btn-back"]}>
             НА ГЛАВНУЮ
           </button>
           <h2 className={styles["film-main-block__title"]}>{film.nameRu}</h2>
@@ -95,7 +102,9 @@ export function FilmPage({ film, onBack }) {
           </div>
           <div className={styles["film-main-block__descriptipn-block"]}>
             <h2 className={styles["descriptipn-block__title"]}>Описание</h2>
-            <p className={styles["descriptipn-block__text"]}>{sanitizeText(film.description)}</p>
+            <p className={styles["descriptipn-block__text"]}>
+              {sanitizeText(film.description)}
+            </p>
           </div>
         </div>
       </div>
