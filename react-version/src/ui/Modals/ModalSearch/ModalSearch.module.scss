@@ -1,0 +1,56 @@
+.ModalSearch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
+  &__btn-close {
+    align-self: flex-end;
+    background-color: transparent;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    &:hover{
+        transition: opacity 0.2s ease;
+        opacity: 0.5;
+    }
+  }
+  & form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    & label {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      @media (max-width:528px) {
+        font-size: 1.5rem;
+      }
+    }
+    & input {
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      color: whitesmoke;
+      &:focus {
+        border-color: #ff47e0;
+        outline: none;
+      }
+    }
+    & input[type="text"] {
+      background-color: #ffffff2a;
+    }
+    & input[type="button"] {
+      cursor: pointer;
+      width: fit-content;
+      align-self: center;
+      background-color: transparent;
+
+      transition: transform 0.5s ease;
+      &:hover {
+        transition: transform 0.5s ease;
+        transform: scaleX(0.8) scaleY(1.1);
+      }
+    }
+  }
+}

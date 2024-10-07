@@ -11,11 +11,15 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "leaflet": "^1.9.4",
     "lucide-react": "^0.445.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1",
+    "react-modal": "^3.16.1",
     "react-router-dom": "^6.26.2",
     "react-slick": "^0.30.2",
+    "react-spring": "^9.7.4",
     "react-toastify": "^10.0.5",
     "sass": "^1.79.3",
     "slick-carousel": "^1.8.1"

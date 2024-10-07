@@ -7,7 +7,7 @@ import { ThemeContext } from "../../theme/ThemeContext";
 import { useNavigate, useLocation } from "react-router-dom";
 import { toast } from "react-toastify";
 
-export default function Header({ type }) {
+export default function Header({ type, openModal }) {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const navigate = useNavigate();
   const location = useLocation();
@@ -35,7 +35,7 @@ export default function Header({ type }) {
         <div className={styles["header__button-container"]}>
           <Button buttonType={"white"}>Collection</Button>
           <Button onClick={handleHomeClick}>Home</Button>
-          <ButtonRound>
+          <ButtonRound onClick={openModal}>
             <Search style={{ color: "white" }} size={17} />
           </ButtonRound>
         </div>
