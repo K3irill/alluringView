@@ -33,7 +33,7 @@ export default function Header({ type, openModal }) {
     <>
       <header className={styles.header}>
         <div className={styles["header__button-container"]}>
-          <Button buttonType={"white"}>Collection</Button>
+          {/* <Button buttonType={"white"}>Collection</Button> */}
           <Button onClick={handleHomeClick}>Home</Button>
           <ButtonRound onClick={openModal}>
             <Search style={{ color: "white" }} size={17} />
