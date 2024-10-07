@@ -9,6 +9,8 @@ import { SeriesSection } from './components/FilmCollections/SeriesSection/Series
 import { FilmPage } from './components/FilmPage/FilmPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from "react";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [selectedFilm, setSelectedFilm] = useState(null);
@@ -20,6 +22,7 @@ function App() {
   return (
     <Router basename='/alluringView'>
       <Header />
+      <ToastContainer />
       <main>
         <Routes>
           <Route

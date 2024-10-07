@@ -85,7 +85,6 @@ h6 {
   min-height: 100%;
   padding: 0;
   margin: 0;
-
 }
 .slick-slide > div {
   margin: 0 20px;
@@ -112,17 +111,26 @@ h6 {
 }
 
 /* Theme styles */
-:root[data-theme='light'] {
+:root[data-theme="light"] {
   --background-color: rgba(255, 255, 255, 0.705);
   --text-color: black;
 }
 
-[data-theme='dark'] {
-  --background-color:  rgba(0, 0, 0, 0.904);
+[data-theme="dark"] {
+  --background-color: rgba(0, 0, 0, 0.904);
   --text-color: white;
 }
 
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+}
+
+.custom-toast {
+  background-color: #333;
+  color: white;
+}
+
+.custom-progress-bar {
+  background-color: #ff47e09a;
 }

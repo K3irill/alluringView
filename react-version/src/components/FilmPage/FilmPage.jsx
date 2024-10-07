@@ -8,6 +8,7 @@ import { fetchFilms } from "../../api/fetchFilms/fetchFilms.js";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { toast } from "react-toastify";
 
 export function FilmPage({ film, onBack }) {
   const [imgs, setImg] = useState([]);
@@ -36,6 +37,20 @@ export function FilmPage({ film, onBack }) {
       posterAnimation(posterWrapRef.current, posterContainerRef.current);
     }
   }, []);
+
+  function handleFavoriteBtn() {
+    toast.info("Эта функция пока не работает:)", {
+      toastId: "home-toast",
+      position: "top-right",
+      className: "custom-toast",
+      progressClassName: "custom-progress-bar",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+    });
+  }
 
   const settings = {
     dots: false,
@@ -67,6 +82,7 @@ export function FilmPage({ film, onBack }) {
       },
     ],
   };
+  console.log(imgs);
 
   return (
     <div
@@ -89,7 +105,8 @@ export function FilmPage({ film, onBack }) {
               className={styles["film-main-block__poster"]}
             />
           </div>
-          <a
+          <button
+            onClick={handleFavoriteBtn}
             href="#"
             className={`${styles["film-main-block__btn-favorite"]} ${
               theme === "dark"
@@ -98,7 +115,7 @@ export function FilmPage({ film, onBack }) {
             }`}
           >
             В ИЗБРАННОЕ
-          </a>
+          </button>
         </div>
         <div className={styles["film-main-block__main-info"]}>
           <button onClick={() => navigate("/")} className={styles["btn-back"]}>
@@ -181,9 +198,9 @@ export function FilmPage({ film, onBack }) {
         >
           <ul>
             <Slider {...settings}>
-              {imgs.map((img) => {
+              {imgs.map((img, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <img
                       className={styles["photo-container_imgs"]}
                       src={img.imageUrl}
