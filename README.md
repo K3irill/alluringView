@@ -1,4 +1,4 @@
-# 🎬 **AlluringView**
+# <img src="https://github.com/user-attachments/assets/650f3db8-865b-469a-be1b-9dc9ef965ad9" alt="Описание изображения" width="30" /> **AlluringView**
 
 AlluringView — это простое веб-приложение для поиска фильмов и сериалов.
 
